@@ -34,7 +34,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    api 'com.google.firebase:firebase-ads:11.8.0'
+    implementation 'com.google.firebase:firebase-ads:11.8.0'
 }
 
 //gradlew :ad:clean :ad:build :ad:generateRelease
