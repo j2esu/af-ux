@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="af_vibrate_title">"Vibrazione"</string>
+    <string name="af_no_apps_found">"Impossibile trovare un\'applicazione adeguata"</string>
+
+    <string name="af_action_cant_be_undo">"L\'operazione non può essere annullata."</string>
+    <string name="af_close">"Chiudi"</string>
+    <string name="af_delete">"Elimina"</string>
+    <string name="af_download">"Scarica"</string>
+    <string name="af_notifications">"Notifiche"</string>
+    <string name="af_reply">"Rispondi"</string>
+    <string name="af_send">"Invia"</string>
+    <string name="af_send_feedback">"Invia feedback"</string>
+    <string name="af_settings">"Impostazioni"</string>
+    <string name="af_share">"Condividi"</string>
+    <string name="af_silent_ringtone">"Silenzioso"</string>
+    <string name="af_sound_signal">"Suono"</string>
+    <string name="af_welcome">"Benvenuto"</string>
+
+    <plurals name="af_days_relative_future">
+        <item quantity="other">tra <xliff:g id="COUNT_1">%d</xliff:g> giorni</item>
+        <item quantity="one">tra <xliff:g id="COUNT_0">%d</xliff:g> giorno</item>
+    </plurals>
+    <string name="af_not_now">"Non ora"</string>
+    <string name="af_remember">"Memorizza"</string>
+    <string name="af_never">"Mai"</string>
+    <string name="af_text_copied">"Testo copiato negli appunti"</string>
+    <string name="af_allow">"Consenti"</string>
+    <string name="af_no_matches">"Nessuna corrispondenza"</string>
+    <string name="af_app_info">"Informazioni app"</string>
+
+    <!-- appearance -->
+    <string name="af_theme">Tema</string>
+    <string name="af_deleted">Eliminato</string>
+    <string name="af_restored">Ripristinato</string>
+    <string name="af_ad_will_appear_after_trial">L\'annuncio verrà visualizzato qui dopo la fine del periodo di prova</string>
+    <string name="af_you_can_do_it_later_in_settings">È possibile farlo in seguito su Impostazioni</string>
+    <string name="af_theme_light">Chiaro</string>
+    <string name="af_theme_dark">Scuro</string>
+    <string name="af_appearance_prefs_title">Aspetto</string>
+    <string name="af_primary_color">Colore principale</string>
+    <string name="af_secondary_color">Colore secondario</string>
+
+    <!-- voice input -->
+    <string name="af_voice_input">Comando vocale</string>
+    <string name="af_voice_input_prompt">Parla adesso</string>
+    <string name="af_show_recognition_vars">Mostra varianti di riconoscimento</string>
+    <string name="af_no_app_to_recognize_voice">Nessuna applicazione di riconoscimento vocale</string>
+    <string name="af_recognition_language">Lingua di riconoscimento</string>
+    <!-- billing -->
+    <string name="af_billing_is_not_supported_on_your_device">Fatturazione non supportata su questo dispositivo. Aggiornare Google Play alla nuova versione.</string>
+    <string name="af_thank_you_for_purchase">Grazie per aver effettuato l\'acquisto! Si prega di contattarci in caso di problemi con la nostra applicazione.</string>
+    <!-- rate -->
+    <string name="af_rate_prompt">Ti piace questa applicazione?<xliff:g>\n</xliff:g>Esprimi il tuo voto su Google Play!</string>
+
+    <string name="af_accounts">Account</string>
+    <string name="af_add">Aggiungere</string>
+    <string name="af_apply">Applicare</string>
+    <string name="af_apps">Applicazioni</string>
+    <string name="af_by_default">Predefinito</string>
+    <string name="af_change">Cambiare</string>
+    <string name="af_clear">Cancellare</string>
+    <string name="af_contact_us">Per contattarci</string>
+    <string name="af_contacts">Contatti</string>
+    <string name="af_customize">Personalizzare</string>
+    <string name="af_disable">Disabilitare</string>
+    <string name="af_edit">Modificare</string>
+    <string name="af_error">Errore</string>
+    <string name="af_hide">Nascondere</string>
+    <string name="af_install">Installa</string>
+    <string name="af_menu">Menu</string>
+    <string name="af_no">No</string>
+    <string name="af_no_contacts_found">Nessun contatto trovato</string>
+    <string name="af_open">Aprire</string>
+    <string name="af_other_prefs_title">Altro</string>
+    <string name="af_privacy_policy">Linea guida sulla privacy</string>
+    <string name="af_rate">Valutare</string>
+    <string name="af_recent_items_title">Recente</string>
+    <string name="af_remove_ad">Rimuovere la pubblicità</string>
+    <string name="af_removed">Rimosso</string>
+    <string name="af_reset">Resettare</string>
+    <string name="af_restore">Ripristinare</string>
+    <string name="af_retry">Riprova</string>
+    <string name="af_set_as_default">Imposta come predefinito</string>
+    <string name="af_tip">Suggerimento</string>
+    <string name="af_undo">Disfare</string>
+    <string name="af_use">Usare</string>
+    <string name="af_yes">Sì</string>
+
+    <string name="af_cant_get_rec_lang_list">Impossibile scaricare le lingue disponibili</string>
+    <string name="af_network_error">Errore di rete. Controlla la connessione Internet</string>
+    <string name="af_new_app_already_available">La nostra nuova applicazione <xliff:g id="app_name">%s</xliff:g> è già disponibile su Google Play!</string>
+    <string name="af_restore_defaults">Ripristina valori predefiniti</string>
+    <string name="af_use_std_recognition_app">Utilizza l\'applicazione standard di riconoscimento vocale</string>
+    <string name="af_want_more_features">Vuoi altre funzioni?</string>
+</resources>

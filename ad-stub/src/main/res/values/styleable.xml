@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AfBannerAdView">
+        <attr name="unitId" format="string|reference"/>
+        <attr name="appId" format="string|reference"/>
+        <attr name="adEnabled" format="boolean|reference"/>
+    </declare-styleable>
+
+</resources>

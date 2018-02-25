@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="af_accounts">Аккаунты</string>
+    <string name="af_action_cant_be_undo">"Это действие нельзя будет отменить."</string>
+    <string name="af_ad_will_appear_after_trial">Реклама будет показана после завершения пробного периода</string>
+    <string name="af_add">Добавить</string>
+    <string name="af_allow">Разрешить</string>
+    <string name="af_app_info">"О приложении"</string>
+    <string name="af_appearance_prefs_title">Внешний вид</string>
+    <string name="af_apply">Применить</string>
+    <string name="af_apps">Приложения</string>
+    <string name="af_billing_is_not_supported_on_your_device">Встроенные покупки не поддерживаются вашим устройством. Пожалуйста, обновите приложение Google Play.</string>
+    <string name="af_by_default">По умолчанию</string>
+    <string name="af_cant_get_rec_lang_list">Невозможно получить список доступных языков</string>
+    <string name="af_change">Изменить</string>
+    <string name="af_clear">Очистить</string>
+    <string name="af_close">"Закрыть"</string>
+    <string name="af_contact_us">Связаться с нами</string>
+    <string name="af_contacts">Контакты</string>
+    <string name="af_customize">Настроить</string>
+    <plurals name="af_days_relative_future">
+        <item quantity="one">через <xliff:g id="COUNT_1">%d</xliff:g> день</item>
+        <item quantity="few">через <xliff:g id="COUNT_1">%d</xliff:g> дня</item>
+        <item quantity="many">через <xliff:g id="COUNT_1">%d</xliff:g> дней</item>
+    </plurals>
+    <string name="af_delete">"Удалить"</string>
+    <string name="af_deleted">Удалено</string>
+    <string name="af_disable">Отключить</string>
+    <string name="af_download">"Скачать"</string>
+    <string name="af_edit">Редактировать</string>
+    <string name="af_error">Ошибка</string>
+    <string name="af_hide">Скрыть</string>
+    <string name="af_install">Установить</string>
+    <string name="af_menu">Меню</string>
+    <string name="af_network_error">Нет соединения. Пожалуйста, проверьте ваше подключение к интернету</string>
+    <string name="af_never">"Никогда"</string>
+    <string name="af_new_app_already_available">Наше новое приложение <xliff:g id="app_name">%s</xliff:g> уже доступно на Google Play!</string>
+    <string name="af_no">Нет</string>
+    <string name="af_no_app_to_recognize_voice">Приложение для распознавания голоса не найдено</string>
+    <string name="af_no_apps_found">"Подходящее приложение не найдено"</string>
+    <string name="af_no_contacts_found">Контакты не найдены</string>
+    <string name="af_no_matches">"Нет совпадений"</string>
+    <string name="af_not_now">"Не сейчас"</string>
+    <string name="af_notifications">"Уведомления"</string>
+    <string name="af_open">Открыть</string>
+    <string name="af_other_prefs_title">Другое</string>
+    <string name="af_primary_color">Основной цвет</string>
+    <string name="af_privacy_policy">Конфиденциальность</string>
+    <string name="af_rate">Оценить</string>
+    <string name="af_rate_prompt">Понравилось приложение?<xliff:g>\n</xliff:g>Оцените нас на Google Play!</string>
+    <string name="af_recent_items_title">Недавние</string>
+    <string name="af_recognition_language">Язык распознавания</string>
+    <string name="af_remember">"Запомнить"</string>
+    <string name="af_remove_ad">Убрать рекламу</string>
+    <string name="af_removed">Удалено</string>
+    <string name="af_reply">"Ответить"</string>
+    <string name="af_reset">Сбросить</string>
+    <string name="af_restore">Восстановить</string>
+    <string name="af_restore_defaults">Восстановить значения по умолчанию</string>
+    <!--показывается после завершения удаления-->
+    <string name="af_restored">Восстановлено</string>
+    <string name="af_retry">Повторить</string>
+    <string name="af_secondary_color">Второй цвет</string>
+    <string name="af_send">"Отправить"</string>
+    <string name="af_send_feedback">"Отправить отзыв"</string>
+    <string name="af_set_as_default">Установить по умолчанию</string>
+    <string name="af_settings">"Настройки"</string>
+    <string name="af_share">"Поделиться"</string>
+    <string name="af_show_recognition_vars">Показывать варианты распознавания</string>
+    <string name="af_silent_ringtone">"Без звука"</string>
+    <string name="af_sound_signal">"Звуковой сигнал"</string>
+    <string name="af_text_copied">"Текст скопирован в буфер обмена"</string>
+    <string name="af_thank_you_for_purchase">Спасибо за покупку! Пожалуйста, свяжитесь с нами, если у вас возникнут какие-либо проблемы с использованием приложения.</string>
+    <string name="af_theme">Тема оформления</string>
+    <string name="af_theme_dark">Темная</string>
+    <string name="af_theme_light">Светлая</string>
+    <string name="af_tip">Подсказка</string>
+    <string name="af_undo">Отменить</string>
+    <string name="af_use">Использовать</string>
+    <string name="af_use_std_recognition_app">Использовать стандартное приложение распознавания голоса</string>
+    <string name="af_vibrate_title">"Вибросигнал"</string>
+    <string name="af_voice_input">Голосовой ввод</string>
+    <string name="af_voice_input_prompt">Говорите</string>
+    <string name="af_want_more_features">Хотите больше возможностей?</string>
+    <string name="af_welcome">"Добро пожаловать!"</string>
+    <string name="af_yes">Да</string>
+    <string name="af_you_can_do_it_later_in_settings">Вы можете сделать это позже в настройках</string>
+
+</resources>

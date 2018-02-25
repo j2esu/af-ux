@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="af_vibrate_title">"Getar"</string>
+    <string name="af_no_apps_found">"Aplikasi yang sesuai tidak dapat ditemukan"</string>
+
+    <string name="af_action_cant_be_undo">"Tindakan ini tidak dapat diurungkan."</string>
+    <string name="af_close">"Tutup"</string>
+    <string name="af_delete">"Hapus"</string>
+    <string name="af_download">"Unduh"</string>
+    <string name="af_notifications">"Notifikasi"</string>
+    <string name="af_reply">"Balas"</string>
+    <string name="af_send">"Kirim"</string>
+    <string name="af_send_feedback">"Kirim masukan"</string>
+    <string name="af_settings">"Setelan"</string>
+    <string name="af_share">"Bagikan"</string>
+    <string name="af_silent_ringtone">"Senyap"</string>
+    <string name="af_sound_signal">"Suara"</string>
+    <string name="af_welcome">"Selamat Datang"</string>
+
+    <plurals name="af_days_relative_future">
+        <item quantity="other">dalam <xliff:g id="COUNT_1">%d</xliff:g> hari</item>
+    </plurals>
+    <string name="af_not_now">"Tidak sekarang"</string>
+    <string name="af_remember">"Ingat"</string>
+    <string name="af_never">"Jangan"</string>
+    <string name="af_text_copied">"Teks disalin ke papan klip"</string>
+    <string name="af_allow">"Izinkan"</string>
+    <string name="af_no_matches">"Tidak ada kecocokan"</string>
+    <string name="af_app_info">"Info aplikasi"</string>
+
+    <!-- appearance -->
+    <string name="af_theme">Tema</string>
+    <string name="af_deleted">Dihapus</string>
+    <string name="af_restored">Dipulihkan</string>
+    <string name="af_ad_will_appear_after_trial">Iklan akan muncul di sini setelah periode coba berakhir</string>
+    <string name="af_you_can_do_it_later_in_settings">Anda dapat melakukannya nanti di pengaturan</string>
+    <string name="af_theme_light">Terang</string>
+    <string name="af_theme_dark">Gelap</string>
+    <string name="af_appearance_prefs_title">Tampilan</string>
+    <string name="af_primary_color">Warna primer</string>
+    <string name="af_secondary_color">Warna sekunder</string>
+
+    <!-- voice input -->
+    <string name="af_voice_input">Input suara</string>
+    <string name="af_voice_input_prompt">Bicara sekarang</string>
+    <string name="af_show_recognition_vars">Tampilkan varian pengenalan</string>
+    <string name="af_no_app_to_recognize_voice">Tidak ada aplikasi untuk mengenali suara</string>
+    <string name="af_recognition_language">Bahasa pengenalan</string>
+    <!-- billing -->
+    <string name="af_billing_is_not_supported_on_your_device">Penagihan tidak didukung di peranti Anda. Perbarui versi Google Play.</string>
+    <string name="af_thank_you_for_purchase">Terima kasih atas pembelian Anda! Hubungi kami jika Anda menemui masalah dengan aplikasi kami.</string>
+    <!-- rate -->
+    <string name="af_rate_prompt">Suka aplikasi ini?<xliff:g>\n</xliff:g>Beri nilai di Google Play!</string>
+
+    <string name="af_accounts">Akun</string>
+    <string name="af_add">Menambahkan</string>
+    <string name="af_apply">Menerapkan</string>
+    <string name="af_apps">Aplikasi</string>
+    <string name="af_by_default">Default</string>
+    <string name="af_change">Merubah</string>
+    <string name="af_clear">Bersih</string>
+    <string name="af_contact_us">Hubungi kami</string>
+    <string name="af_contacts">Kontak</string>
+    <string name="af_customize">Sesuaikan</string>
+    <string name="af_disable">Nonaktifkan</string>
+    <string name="af_edit">Mengedit</string>
+    <string name="af_error">Kesalahan</string>
+    <string name="af_hide">Menyembunyikan</string>
+    <string name="af_install">Menginstal</string>
+    <string name="af_menu">Menu</string>
+    <string name="af_no">Tidak</string>
+    <string name="af_no_contacts_found">Tidak ada kontak yang ditemukan</string>
+    <string name="af_open">Membuka</string>
+    <string name="af_other_prefs_title">Lain</string>
+    <string name="af_privacy_policy">Kebijakan pribadi</string>
+    <string name="af_rate">Menilai</string>
+    <string name="af_recent_items_title">Aktuil</string>
+    <string name="af_remove_ad">Hilangkan iklan</string>
+    <string name="af_removed">Dihapus</string>
+    <string name="af_reset">Reset</string>
+    <string name="af_restore">Mengembalikan</string>
+    <string name="af_retry">Mencoba kembali</string>
+    <string name="af_set_as_default">Ditetapkan sebagai default</string>
+    <string name="af_tip">Petunjuk</string>
+    <string name="af_undo">Membatalkan</string>
+    <string name="af_use">Menggunakan</string>
+    <string name="af_yes">Iya nih</string>
+
+    <string name="af_cant_get_rec_lang_list">Tidak bisa mendapatkan bahasa tersedia</string>
+    <string name="af_network_error">Galat jaringan. Periksa koneksi internet</string>
+    <string name="af_new_app_already_available">Aplikasi baru kami <xliff:g id="app_name">%s</xliff:g> sudah tersedia di Google Play!</string>
+    <string name="af_restore_defaults">Pulihkan default</string>
+    <string name="af_use_std_recognition_app">Gunakan aplikasi pengenalan suara standar</string>
+    <string name="af_want_more_features">Ingin fitur lain?</string>
+</resources>

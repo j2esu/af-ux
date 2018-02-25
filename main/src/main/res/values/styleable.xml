@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AfImageView">
+        <attr name="vectorBackground" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="AfTextView">
+        <attr name="vectorDrawableStart" format="reference"/>
+        <attr name="vectorDrawableEnd" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ViewGroup">
+        <attr name="viewGroupTint" format="color|reference"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="af_vibrate_title">"振动"</string>
+    <string name="af_no_apps_found">"找不到合适的应用"</string>
+    <string name="af_action_cant_be_undo">"该操作无法撤消。"</string>
+    <string name="af_close">"关闭"</string>
+    <string name="af_delete">"删除"</string>
+    <string name="af_download">"下载"</string>
+    <string name="af_notifications">"通知"</string>
+    <string name="af_reply">"回复"</string>
+    <string name="af_send">"发送"</string>
+    <string name="af_send_feedback">"发送反馈"</string>
+    <string name="af_settings">"设置"</string>
+    <string name="af_share">"分享"</string>
+    <string name="af_silent_ringtone">"静音"</string>
+    <string name="af_sound_signal">"提示音"</string>
+    <string name="af_welcome">"欢迎使用"</string>
+    <plurals name="af_days_relative_future" formatted="false">
+        <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> 天后</item>
+    </plurals>
+    <string name="af_not_now">"暂不保存"</string>
+    <string name="af_remember">"记住"</string>
+    <string name="af_never">"永不"</string>
+    <string name="af_text_copied">"文本已复制到剪贴板。"</string>
+    <string name="af_allow">"允许"</string>
+    <string name="af_no_matches">"无匹配项"</string>
+    <string name="af_app_info">"应用信息"</string>
+
+    <string name="af_removed">已删除</string>
+    <string name="af_clear">清除</string>
+    <string name="af_undo">撤销</string>
+    <string name="af_edit">编辑</string>
+    <string name="af_rate">评价</string>
+    <string name="af_install">安装</string>
+    <string name="af_open">打开</string>
+    <string name="af_use">使用</string>
+    <string name="af_hide">隐藏</string>
+    <string name="af_by_default">默认</string>
+    <string name="af_customize">自定义</string>
+    <string name="af_add">添加</string>
+    <string name="af_set_as_default">设为默认</string>
+    <string name="af_change">更改</string>
+    <string name="af_recent_items_title">最近</string>
+    <string name="af_other_prefs_title">其他</string>
+    <string name="af_contact_us">联系我们</string>
+    <string name="af_apps">应用程序</string>
+    <string name="af_contacts">联系人</string>
+    <string name="af_no_contacts_found">未找到联系人</string>
+    <string name="af_retry">重试</string>
+    <string name="af_yes">是</string>
+    <string name="af_no">否</string>
+    <string name="af_reset">重置</string>
+    <string name="af_disable">禁用</string>
+    <string name="af_menu">菜单</string>
+    <string name="af_privacy_policy">隐私政策</string>
+    <string name="af_apply">应用</string>
+    <string name="af_accounts">帐户</string>
+    <string name="af_tip">提示</string>
+    <string name="af_restore">还原</string>
+    <string name="af_error">错误</string>
+    <string name="af_deleted">已删除</string>
+    <string name="af_restored">已还原</string>
+    <string name="af_you_can_do_it_later_in_settings">您可以稍后在设置中进行设置</string>
+
+    <!-- advertisement -->
+    <string name="af_remove_ad">移除广告</string>
+    <string name="af_ad_will_appear_after_trial">试用期结束后，广告会出现在这里</string>
+
+    <!-- appearance settings -->
+    <string name="af_appearance_prefs_title">外观</string>
+    <string name="af_theme">主题</string>
+    <string name="af_theme_light">浅色</string>
+    <string name="af_theme_dark">深色</string>
+    <string name="af_primary_color">主要颜色</string>
+    <string name="af_secondary_color">辅助颜色</string>
+
+    <!-- voice input -->
+    <string name="af_voice_input">语音输入</string>
+    <string name="af_voice_input_prompt">现在说</string>
+    <string name="af_show_recognition_vars">显示识别变体</string>
+    <string name="af_no_app_to_recognize_voice">没有语音识别应用程序</string>
+    <string name="af_recognition_language">识别语言</string>
+    <!-- billing -->
+    <string name="af_billing_is_not_supported_on_your_device">您的设备不支持计费。请更新Google Play版本。</string>
+    <string name="af_thank_you_for_purchase">感谢您的购买！如果您在使用我们的应用程序时遇到任何问题，请联系我们。</string>
+    <!-- rate -->
+    <string name="af_rate_prompt">喜欢这款应用程序？<xliff:g>\n</xliff:g>在Google Play进行评价！</string>
+
+    <string name="af_cant_get_rec_lang_list">无法获取可用语言</string>
+    <string name="af_network_error">网络错误。请检查互联网连接</string>
+    <string name="af_new_app_already_available">我们的新应用程序<xliff:g id="app_name">%s</xliff:g>现已登上Google Play！</string>
+    <string name="af_restore_defaults">恢复默认值</string>
+    <string name="af_use_std_recognition_app">使用标准语音识别应用</string>
+    <string name="af_want_more_features">想要更多功能？</string>
+</resources>
