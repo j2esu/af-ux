@@ -20,6 +20,7 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    api project(':ad')
-    api project(':main')
+    implementation project(':ad')
+    implementation project(':main')
+    implementation 'com.android.support:appcompat-v7:27.0.2'
 }

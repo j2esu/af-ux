@@ -38,9 +38,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    api 'android.arch.lifecycle:common-java8:1.1.0'
-    api 'android.arch.lifecycle:extensions:1.1.0'
-    api 'su.j2e:af-common:2.0.0'
+    implementation 'android.arch.lifecycle:common-java8:1.1.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.0'
+    implementation 'ru.uxapps:af-base:1.0.0'
 }
 
 //gradlew :live:clean :live:build :live:generateRelease

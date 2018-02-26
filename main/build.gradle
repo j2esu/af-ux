@@ -35,7 +35,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     implementation 'com.android.support:appcompat-v7:27.0.2'
-    api 'ru.uxapps:af-base:1.0.0'
+    implementation 'ru.uxapps:af-base:1.0.0'
 }
 
 //gradlew :main:clean :main:build :main:generateRelease
