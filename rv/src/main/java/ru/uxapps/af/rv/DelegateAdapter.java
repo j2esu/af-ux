@@ -1,5 +1,6 @@
 package ru.uxapps.af.rv;
 
+import android.support.v7.util.DiffUtil;
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.ViewGroup;
@@ -8,6 +9,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DelegateAdapter<T> extends RecyclerView.Adapter {
+
+    public interface Diff<T> {
+
+        boolean isSame(T a, T b);
+
+        boolean isEquals(T a, T b);
+
+    }
 
     public static class Builder<T> {
 
@@ -56,9 +65,41 @@ public class DelegateAdapter<T> extends RecyclerView.Adapter {
         mDelegates = delegates;
     }
 
-    public void setData(TypedListData<T> newData) {
+    public TypedListData<T> getData() {
+        return mData;
+    }
+
+    public void setData(TypedListData<T> newData, Runnable notifyChanges) {
         mData = newData;
-        notifyDataSetChanged();
+        if (notifyChanges == null) notifyDataSetChanged();
+        else notifyChanges.run();
+    }
+
+    public void setData(final TypedListData<T> newData, final Diff<T> diff, boolean detectMoves) {
+        DiffUtil.DiffResult res = DiffUtil.calculateDiff(new DiffUtil.Callback() {
+            @Override
+            public int getOldListSize() {
+                return mData.size();
+            }
+
+            @Override
+            public int getNewListSize() {
+                return newData.size();
+            }
+
+            @Override
+            public boolean areItemsTheSame(int oldItemPosition, int newItemPosition) {
+                return mData.getType(oldItemPosition) == newData.getType(newItemPosition) &&
+                        diff.isSame(mData.get(oldItemPosition), newData.get(newItemPosition));
+            }
+
+            @Override
+            public boolean areContentsTheSame(int oldItemPosition, int newItemPosition) {
+                return diff.isEquals(mData.get(oldItemPosition), newData.get(newItemPosition));
+            }
+        }, detectMoves);
+        mData = newData;
+        res.dispatchUpdatesTo(this);
     }
 
     @Override
