@@ -16,7 +16,6 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresPermission;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class AfIntents {
@@ -32,6 +31,13 @@ public class AfIntents {
 
         }
 
+        public static Intent start(@Nullable String prompt, @Nullable String lang) {
+            return new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
+                    .putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+                    .putExtra(RecognizerIntent.EXTRA_PROMPT, prompt)
+                    .putExtra(RecognizerIntent.EXTRA_LANGUAGE, lang);
+        }
+
         public static Intent installVoiceRecognition() {
             String url = Build.VERSION.SDK_INT < 16 ?
                     "https://play.google.com/store/apps/details?id=com.google.android.voicesearch" :
@@ -39,14 +45,14 @@ public class AfIntents {
             return openUrl(url);
         }
 
-        public static List<String> getRecognitionResults(Intent intent) {
+        public static ArrayList<String> getRecognitionResults(Intent intent) {
             if (intent.getExtras() != null) {
                 //noinspection unchecked
                 ArrayList<String> recognizingResults = (ArrayList<String>) intent.getExtras()
                         .get(RecognizerIntent.EXTRA_RESULTS);
                 if (recognizingResults != null) return recognizingResults;
             }
-            return Collections.emptyList();
+            return new ArrayList<>(0);
         }
 
         public static void getSupportedLang(Context context, final SupportedLangCallback callback) {
@@ -137,13 +143,6 @@ public class AfIntents {
 
     public static Intent pickContact() {
         return new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
-    }
-
-    public static Intent recognizeVoice(@Nullable String prompt, @Nullable String lang) {
-        return new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
-                .putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
-                .putExtra(RecognizerIntent.EXTRA_PROMPT, prompt)
-                .putExtra(RecognizerIntent.EXTRA_LANGUAGE, lang);
     }
 
     public static Intent emailTo(String address, String subject, String text) {
