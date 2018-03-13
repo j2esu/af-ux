@@ -12,9 +12,9 @@ import android.widget.TextView;
 import ru.uxapps.af.base.Registry;
 import ru.uxapps.af.base.SetRegistry;
 
-public interface LifecycleUtils {
+public class LifecycleUtils {
 
-    static void onDestroy(Lifecycle lifecycle, Runnable r) {
+    public static void onDestroy(Lifecycle lifecycle, final Runnable r) {
         lifecycle.addObserver(new DefaultLifecycleObserver() {
             @Override
             public void onDestroy(@NonNull LifecycleOwner owner) {
@@ -23,20 +23,20 @@ public interface LifecycleUtils {
         });
     }
 
-    static Registry<Runnable> onDestroyRegistry(Lifecycle lifecycle) {
+    public static Registry<Runnable> onDestroyRegistry(Lifecycle lifecycle) {
         SetRegistry<Runnable> observers = new SetRegistry<>();
         onDestroy(lifecycle, () -> observers.forEach(Runnable::run));
         return observers;
     }
 
-    static <T> MutableLiveData<T> liveDataWithDefault(T val) {
+    public static <T> MutableLiveData<T> liveDataWithDefault(T val) {
         MutableLiveData<T> liveData = new MutableLiveData<>();
         liveData.setValue(val);
         return liveData;
     }
 
-    static MutableLiveData<String> liveInput(TextView textView) {
-        MutableLiveData<String> live = new MutableLiveData<>();
+    public static MutableLiveData<String> liveInput(TextView textView) {
+        final MutableLiveData<String> live = new MutableLiveData<>();
         live.setValue(textView.getText().toString());
         textView.addTextChangedListener(new TextWatcher() {
             @Override
