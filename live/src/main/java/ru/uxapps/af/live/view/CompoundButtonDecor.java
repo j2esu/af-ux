@@ -1,30 +1,29 @@
 package ru.uxapps.af.live.view;
 
+import android.support.annotation.Nullable;
+import android.view.View;
 import android.widget.CompoundButton;
 
-import ru.uxapps.af.base.AfProvider;
-import ru.uxapps.af.live.LiveEvent;
-import ru.uxapps.af.live.MutableLiveEvent;
-
-public class CompoundButtonDecor<T extends CompoundButton> implements AfProvider<T> {
+public class CompoundButtonDecor<T extends CompoundButton> {
 
     private final T mCb;
-    private final MutableLiveEvent mLiveClicks = new MutableLiveEvent();
+    @Nullable
+    private View.OnClickListener mOnClickListener;
 
     public CompoundButtonDecor(T cb) {
         mCb = cb;
         mCb.setOnClickListener(v -> {
             mCb.setChecked(!mCb.isChecked());
-            mLiveClicks.send();
+            mCb.jumpDrawablesToCurrentState();
+            if (mOnClickListener != null) mOnClickListener.onClick(mCb);
         });
     }
 
-    public LiveEvent getLiveClicks() {
-        return mLiveClicks;
+    public void setOnClickListener(View.OnClickListener listener) {
+        mOnClickListener = listener;
     }
 
-    @Override
-    public T get() {
+    public T getView() {
         return mCb;
     }
 }

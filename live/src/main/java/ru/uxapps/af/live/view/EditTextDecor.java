@@ -6,13 +6,13 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 
 import ru.uxapps.af.base.AfProvider;
-import ru.uxapps.af.live.LiveFlow;
-import ru.uxapps.af.live.MutableLiveFlow;
+import ru.uxapps.af.live.LiveEvent;
+import ru.uxapps.af.live.MutableLiveEvent;
 
 public class EditTextDecor implements AfProvider<EditText> {
 
     private final EditText mEt;
-    private final MutableLiveFlow<String> mLiveText = new MutableLiveFlow<>();
+    private final MutableLiveEvent<String> mLiveText = new MutableLiveEvent<>();
 
     private boolean mObserve = true;
 
@@ -40,7 +40,7 @@ public class EditTextDecor implements AfProvider<EditText> {
         }
     }
 
-    public LiveFlow<String> getLiveInput() {
+    public LiveEvent<String> getLiveInput() {
         return mLiveText;
     }
 

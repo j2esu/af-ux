@@ -16,11 +16,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':ad')
-    implementation project(':main')
-    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation project(':live')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
 }

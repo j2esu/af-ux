@@ -2,8 +2,10 @@ package ru.uxapps.af.live;
 
 import android.arch.lifecycle.LifecycleOwner;
 
-public interface LiveEvent {
+import ru.uxapps.af.base.AfAction;
 
-    Runnable observe(LifecycleOwner owner, Runnable observer);
+public interface LiveEvent<T> {
+
+    void setObserver(LifecycleOwner owner, AfAction<T> observer);
 
 }

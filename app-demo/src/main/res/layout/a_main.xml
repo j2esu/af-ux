@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
-    android:id="@+id/main_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <Button
+        android:id="@+id/ask_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello!"
-        android:padding="32dp"
         android:layout_gravity="center"
+        android:padding="32dp"
+        android:text="Ask!"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         />
-
-    <ru.uxapps.af.ad.AfBannerAdView
-        android:id="@+id/ad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        ads:unitId="ca-app-pub-3940256099942544/6300978111"
-        ads:appId="ca-app-pub-3940256099942544~3347511713"
-        ads:adEnabled="true"
-        android:background="#ccc">
-
-
-    </ru.uxapps.af.ad.AfBannerAdView>
 
 </FrameLayout>
