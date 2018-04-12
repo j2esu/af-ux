@@ -17,16 +17,25 @@ public class DetectOwnedCallback implements Iab.Callback {
     }
 
     @Override
-    public void onConnected(Iab iab, boolean success) {
-        mOwnedListener.onDetectOwned(success && iab.getOwnedItems().contains(mItemId));
+    public void onConnected(Iab iab) {
+        mOwnedListener.onDetectOwned(iab.getOwnedItems().contains(mItemId));
     }
 
     @Override
-    public void onPurchase(boolean complete, String itemId) {
+    public void onNotAvailable() {
+        mOwnedListener.onDetectOwned(false);
     }
 
     @Override
-    public void onConsume(boolean complete, String itemId) {
+    public void onDisconnected(Iab iab) {
+    }
+
+    @Override
+    public void onPurchase(boolean success, String itemId) {
+    }
+
+    @Override
+    public void onConsume(boolean success, String itemId) {
     }
 
 }

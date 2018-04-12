@@ -18,6 +18,7 @@ import com.android.vending.billing.IInAppBillingService;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,37 +41,28 @@ public class IabImp implements Iab, ServiceConnection {
     private static final int RESPONSE_CODE_OK = 0;
     private static final int RESPONSE_CODE_FAIL = -1;//my code not specified by api
 
-    private final String mPublicKey;
-    private final Activity mActivity;
-    private final String mPackage;
+    private final Context mContext;
     private final Callback mCallback;
-
-    private IInAppBillingService mService;
-    private boolean mAvailable = true;
-
+    private final String mPublicKey;
     private final int mRequestCode;
 
-    public IabImp(Activity act, String publicKey, Callback callback, int requestCode) {
+    //null when disconnected
+    private IInAppBillingService mService;
+
+    public IabImp(Context context, String publicKey, int requestCode, Callback callback) {
         mRequestCode = requestCode;
         mPublicKey = publicKey;
-        mActivity = act;
-        mPackage = mActivity.getPackageName();
+        mContext = context;
         mCallback = callback;
-        startService();
-    }
-
-    private void startService() {
-        Intent serviceIntent = new Intent("com.android.vending.billing.InAppBillingService.BIND");
-        serviceIntent.setPackage("com.android.vending");
-        if (!mActivity.bindService(serviceIntent, this, Context.BIND_AUTO_CREATE)) {
-            mAvailable = false;
-            mCallback.onConnected(this, false);
-        }
     }
 
     @Override
-    public boolean isAvailable() {
-        return mAvailable;
+    public void connect() {
+        Intent serviceIntent = new Intent("com.android.vending.billing.InAppBillingService.BIND")
+                .setPackage("com.android.vending");
+        if (!mContext.bindService(serviceIntent, this, Context.BIND_AUTO_CREATE)) {
+            mCallback.onNotAvailable();
+        }
     }
 
     @Override
@@ -79,48 +71,56 @@ public class IabImp implements Iab, ServiceConnection {
     }
 
     @Override
-    public void onDestroy() {
-        mActivity.unbindService(this);
+    public void destroy() {
+        mContext.unbindService(this);
+        mService = null;
     }
 
     @Override
     public void onServiceConnected(ComponentName name, IBinder service) {
         mService = IInAppBillingService.Stub.asInterface(service);
-        mCallback.onConnected(this, true);
+        mCallback.onConnected(this);
     }
 
     @Override
-    public boolean requestPurchase(String itemId) {
+    public void onServiceDisconnected(ComponentName name) {
+        mService = null;
+        mCallback.onDisconnected(this);
+    }
+
+    @Override
+    public void requestPurchase(Activity activity, String itemId) {
         try {
-            Bundle buyIntentBundle = mService.getBuyIntent(IAB_VERSION, mPackage, itemId,
-                    VALUE_INAPP, null);
+            Bundle buyIntentBundle = mService.getBuyIntent(IAB_VERSION, mContext.getPackageName(),
+                    itemId, VALUE_INAPP, null);
             if (buyIntentBundle != null && buyIntentBundle.getInt(KEY_RESPONSE_CODE) == RESPONSE_CODE_OK) {
                 PendingIntent pendingIntent = buyIntentBundle.getParcelable(KEY_BUY_INTENT);
                 if (pendingIntent != null) {
-                    mActivity.startIntentSenderForResult(
+                    activity.startIntentSenderForResult(
                             pendingIntent.getIntentSender(), mRequestCode, new Intent(), 0, 0, 0);
-                    return true;
+                    return;//waiting result from activity
                 }
             }
         } catch (RemoteException | IntentSender.SendIntentException e) {
-            Log.e(TAG, "requestPurchase: ", e);
+            Log.e(TAG, "request purchase fail: ", e);
         }
+        //if not return in success way - fail immediately
         mCallback.onPurchase(false, itemId);
-        return false;
     }
 
     @Override
-    public boolean requestConsume(String itemId) {
-        new ConsumePurchaseAsync().execute(itemId);
-        return true;
+    public void requestConsume(String itemId) {
+        //start async operation
+        new ConsumePurchaseAsync(this).execute(itemId);
     }
 
     @Override
     public List<String> getOwnedItems() {
         if (!isConnected()) return null;
+
         List<String> ownedItems = new ArrayList<>();
         try {
-            Bundle ownedItemsBundle = mService.getPurchases(IAB_VERSION, mPackage,
+            Bundle ownedItemsBundle = mService.getPurchases(IAB_VERSION, mContext.getPackageName(),
                     VALUE_INAPP, null);
             if (ownedItemsBundle.getInt(KEY_RESPONSE_CODE, RESPONSE_CODE_FAIL) == RESPONSE_CODE_OK) {
                 List<String> data = ownedItemsBundle.getStringArrayList(KEY_PURCHASE_DATA_LIST);
@@ -136,55 +136,57 @@ public class IabImp implements Iab, ServiceConnection {
                 }
             }
         } catch (RemoteException e) {
-            Log.e(TAG, "onServiceConnected: ", e);
+            Log.e(TAG, "can't get owned items: ", e);
         }
         return ownedItems;
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        if (requestCode == mRequestCode) {
-            boolean purchaseComplete = false;
-            String itemId = null;
-            if (resultCode == Activity.RESULT_OK && intent != null) {
-                int responseCode = getResponseCode(intent);
-                String purchaseData = intent.getStringExtra(KEY_PURCHASE_DATA);
-                if (responseCode == RESPONSE_CODE_OK && purchaseData != null) {
-                    purchaseComplete = true;
-                    try {
-                        JSONObject jo = new JSONObject(purchaseData);
-                        itemId = jo.getString(KEY_SKU_ID);
-                    } catch (JSONException e) {
-                        Log.e(TAG, "onIntentResult: ", e);
-                    }
+        if (requestCode != mRequestCode) return;//not interested in other codes
+
+        boolean success = false;
+        String itemId = null;
+        if (resultCode == Activity.RESULT_OK && intent != null) {
+            String data = intent.getStringExtra(KEY_PURCHASE_DATA);
+            if (getResponseCode(intent) == RESPONSE_CODE_OK && data != null) {
+                success = true;
+                try {
+                    JSONObject jo = new JSONObject(data);
+                    itemId = jo.getString(KEY_SKU_ID);
+                } catch (JSONException e) {
+                    Log.e(TAG, "can't parse sku id: ", e);
                 }
             }
-            mCallback.onPurchase(purchaseComplete, itemId);
         }
+        mCallback.onPurchase(success, itemId);
     }
 
-    private int getResponseCode(Intent i) {
-        Object o = i.getExtras().get(KEY_RESPONSE_CODE);
-        if (o instanceof Integer) return ((Integer) o);
-        else if (o instanceof Long) return (int) ((Long) o).longValue();
-        else return RESPONSE_CODE_FAIL;
+    private int getResponseCode(Intent intent) {
+        Object code = intent.getExtras() != null ? intent.getExtras().get(KEY_RESPONSE_CODE) : null;
+        return code instanceof Number ? ((Number) code).intValue() : RESPONSE_CODE_FAIL;
     }
 
-    @Override
-    public void onServiceDisconnected(ComponentName name) {
-        mService = null;
-    }
+    private static class ConsumePurchaseAsync extends AsyncTask<String, Void, Object[]> {
 
-    private class ConsumePurchaseAsync extends AsyncTask<String, Void, Object[]> {
+        private final WeakReference<IabImp> mOuter;
+        private final String mPkg;
+
+        ConsumePurchaseAsync(IabImp outer) {
+            mOuter = new WeakReference<>(outer);
+            mPkg = outer.mContext.getPackageName();
+        }
 
         @Override
         protected Object[] doInBackground(String... params) {
-            if (params.length != 1) throw new RuntimeException("Support only 1 param");
+            if (params.length != 1) throw new RuntimeException("Can only consume 1 item");
+
             String itemId = params[0];
             int response = RESPONSE_CODE_FAIL;
-            if (mService != null) {
+            IInAppBillingService service = mOuter.get() != null ? mOuter.get().mService : null;
+            if (service != null) {
                 try {
-                    Bundle ownedItemsBundle = mService.getPurchases(IAB_VERSION, mPackage,
+                    Bundle ownedItemsBundle = service.getPurchases(IAB_VERSION, mPkg,
                             VALUE_INAPP, null);
                     if (ownedItemsBundle != null && ownedItemsBundle.getInt(KEY_RESPONSE_CODE) == RESPONSE_CODE_OK) {
                         List<String> itemsData = ownedItemsBundle.getStringArrayList(KEY_PURCHASE_DATA_LIST);
@@ -194,13 +196,13 @@ public class IabImp implements Iab, ServiceConnection {
                                 //if found appropriate purchase data
                                 if (itemId.equals(jo.getString(KEY_SKU_ID))) {
                                     String token = jo.getString(KEY_PURCHASE_TOKEN);
-                                    response = mService.consumePurchase(IAB_VERSION, mPackage, token);
+                                    response = service.consumePurchase(IAB_VERSION, mPkg, token);
                                 }
                             }
                         }
                     }
                 } catch (RemoteException | JSONException e) {
-                    Log.e(TAG, "doInBackground: ", e);
+                    Log.e(TAG, "error while consuming item: ", e);
                 }
             }
             return new Object[]{response, itemId};
@@ -208,7 +210,9 @@ public class IabImp implements Iab, ServiceConnection {
 
         @Override
         protected void onPostExecute(Object[] data) {
-            mCallback.onConsume((int) data[0] == RESPONSE_CODE_OK, (String) data[1]);
+            if (mOuter.get() != null) {
+                mOuter.get().mCallback.onConsume((int) data[0] == RESPONSE_CODE_OK, (String) data[1]);
+            }
         }
 
     }

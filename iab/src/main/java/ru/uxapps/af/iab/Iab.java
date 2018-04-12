@@ -1,5 +1,6 @@
 package ru.uxapps.af.iab;
 
+import android.app.Activity;
 import android.content.Intent;
 
 import java.util.List;
@@ -8,68 +9,39 @@ public interface Iab {
 
     interface Callback {
 
-        void onConnected(Iab iab, boolean success);
+        void onConnected(Iab iab);
+
+        void onDisconnected(Iab iab);
+
+        void onNotAvailable();
 
         /**
-         * @param complete whether complete or not
+         * @param success whether complete or not
          * @param itemId   item id or null, if can't parse (shouldn't happen, but)
          */
-        void onPurchase(boolean complete, String itemId);
+        void onPurchase(boolean success, String itemId);
 
-        void onConsume(boolean complete, String itemId);
+        void onConsume(boolean success, String itemId);
     }
 
+    /**
+     * Directly call this method in onActivityResult
+     */
     void onActivityResult(int requestCode, int resultCode, Intent intent);
-
-    void onDestroy();
 
     boolean isConnected();
 
-    boolean isAvailable();
+    void connect();
 
+    /**
+     * @return list of owned skus, or null if not connected
+     */
     List<String> getOwnedItems();
 
-    boolean requestPurchase(String itemId);
+    void requestPurchase(Activity activity, String itemId);
 
-    boolean requestConsume(String itemId);
+    void requestConsume(String itemId);
 
-    class Stub {
-
-        public static final Iab INSTANCE = new Iab() {
-            @Override
-            public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-            }
-
-            @Override
-            public void onDestroy() {
-            }
-
-            @Override
-            public boolean isConnected() {
-                return false;
-            }
-
-            @Override
-            public boolean isAvailable() {
-                return false;
-            }
-
-            @Override
-            public List<String> getOwnedItems() {
-                return null;
-            }
-
-            @Override
-            public boolean requestPurchase(String itemId) {
-                return false;
-            }
-
-            @Override
-            public boolean requestConsume(String itemId) {
-                return false;
-            }
-        };
-
-    }
+    void destroy();
 
 }
