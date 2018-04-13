@@ -7,21 +7,39 @@ import java.util.List;
 
 public interface Iab {
 
+    int RESULT_OK = 0;
+    int RESULT_ERROR = 1;
+    int RESULT_USER_CANCEL = 2;
+    int RESULT_NO_NETWORK = 3;
+
     interface Callback {
 
         void onConnected(Iab iab);
 
         void onDisconnected(Iab iab);
 
-        void onNotAvailable();
+        void onConnectNotAvailable(Iab iab);
 
-        /**
-         * @param success whether complete or not
-         * @param itemId   item id or null, if can't parse (shouldn't happen, but)
-         */
-        void onPurchase(boolean success, String itemId);
+        void onPurchase(int result, String itemId);
 
         void onConsume(boolean success, String itemId);
+    }
+
+    abstract class CallbackAdapter implements Callback {
+        @Override
+        public void onConnected(Iab iab) {}
+
+        @Override
+        public void onDisconnected(Iab iab) {}
+
+        @Override
+        public void onConnectNotAvailable(Iab iab) {}
+
+        @Override
+        public void onPurchase(int result, String itemId) {}
+
+        @Override
+        public void onConsume(boolean success, String itemId) {}
     }
 
     /**
@@ -31,17 +49,19 @@ public interface Iab {
 
     boolean isConnected();
 
-    void connect();
+    boolean isAvailable();
+
+    boolean connect();
 
     /**
-     * @return list of owned skus, or null if not connected
+     * @return list of owned skus, or null if cant get
      */
     List<String> getOwnedItems();
 
-    void requestPurchase(Activity activity, String itemId);
+    boolean requestPurchase(Activity activity, String itemId);
 
-    void requestConsume(String itemId);
+    boolean requestConsume(String itemId);
 
-    void destroy();
+    void disconnect();
 
 }

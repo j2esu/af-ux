@@ -1,6 +1,8 @@
 package ru.uxapps.af.iab;
 
-public class DetectOwnedCallback implements Iab.Callback {
+import java.util.List;
+
+public class DetectOwnedCallback extends Iab.CallbackAdapter {
 
     public interface OwnedListener {
 
@@ -18,24 +20,13 @@ public class DetectOwnedCallback implements Iab.Callback {
 
     @Override
     public void onConnected(Iab iab) {
-        mOwnedListener.onDetectOwned(iab.getOwnedItems().contains(mItemId));
+        List<String> ownedItems = iab.getOwnedItems();
+        mOwnedListener.onDetectOwned(ownedItems != null && ownedItems.contains(mItemId));
     }
 
     @Override
-    public void onNotAvailable() {
+    public void onConnectNotAvailable(Iab iab) {
         mOwnedListener.onDetectOwned(false);
-    }
-
-    @Override
-    public void onDisconnected(Iab iab) {
-    }
-
-    @Override
-    public void onPurchase(boolean success, String itemId) {
-    }
-
-    @Override
-    public void onConsume(boolean success, String itemId) {
     }
 
 }
