@@ -30,6 +30,12 @@
     <string name="af_no_matches">No matches</string>
     <string name="af_app_info">App info</string>
     <string name="af_vibrate_title">Vibrate</string>
+    <string name="af_try_again_later">Try again later</string>
+    <string name="af_ad">af_Ad</string>
+    <string name="af_dont_show_again">Don\'t show again</string>
+    <string name="af_no_thanks">No, thanks</string>
+    <string name="af_share_our_app">Share our app</string>
+    <string name="af_free">Free</string>
 
     <string name="af_removed">Removed</string>
     <string name="af_clear">Clear</string>
@@ -82,11 +88,17 @@
     <string name="af_show_recognition_vars">Show recognition variants</string>
     <string name="af_no_app_to_recognize_voice">No app to recognize voice</string>
     <string name="af_recognition_language">Recognition language</string>
+
     <!-- billing -->
     <string name="af_billing_is_not_supported_on_your_device">Billing is not supported on your device. Please update Google Play version.</string>
     <string name="af_thank_you_for_purchase">Thank you for your purchase! Please contact us if you have any problems with our app.</string>
+    <string name="af_purchase_fail">Purchase fails</string>
+
     <!-- rate -->
     <string name="af_rate_prompt">Like this app?<xliff:g>\n</xliff:g>Rate on Google Play!</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">Open application menu</string>
 
     <string name="af_cant_get_rec_lang_list">Can\'t get available languages</string>
     <string name="af_use_std_recognition_app">Use standard voice recognition app</string>

@@ -85,5 +85,15 @@
     <string name="af_welcome">"Добро пожаловать!"</string>
     <string name="af_yes">Да</string>
     <string name="af_you_can_do_it_later_in_settings">Вы можете сделать это позже в настройках</string>
+    <string name="af_purchase_fail">Ошибка при совершении покупки</string>
+    <string name="af_try_again_later">Повторите попытку позже</string>
+    <string name="af_ad">Реклама</string>
+    <string name="af_dont_show_again">Не показывать снова</string>
+    <string name="af_no_thanks">Нет, спасибо</string>
+    <string name="af_share_our_app">Рассказать о приложении</string>
+    <string name="af_free">Бесплатно</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">Открыть меню приложения</string>
 
 </resources>

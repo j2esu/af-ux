@@ -9,8 +9,11 @@
     <string name="af_appearance_prefs_title">외관</string>
     <string name="af_apply">신청하기</string>
     <string name="af_apps">응용 프로그램</string>
+
     <!-- billing -->
     <string name="af_billing_is_not_supported_on_your_device">귀하의 기기에서 청구는 지원되지 않습니다. Google Play 버전으로 업데이트하십시오.</string>
+    <string name="af_purchase_fail">구매 실패</string>
+
     <string name="af_by_default">디폴트값</string>
     <string name="af_cant_get_rec_lang_list">사용 가능한 언어를 가져올 수 없습니다.</string>
     <string name="af_change">바꾸다</string>
@@ -46,6 +49,7 @@
     <string name="af_primary_color">기본 색</string>
     <string name="af_privacy_policy">개인 정보 정책</string>
     <string name="af_rate">평가하기</string>
+
     <!-- rate -->
     <string name="af_rate_prompt">이 앱이 마음에 드십니까? Google Play에서 평가해 주십시오!</string>
     <string name="af_recent_items_title">최근의</string>
@@ -70,6 +74,13 @@
     <string name="af_sound_signal">"소리"</string>
     <string name="af_text_copied">"텍스트가 클립보드에 복사되었습니다"</string>
     <string name="af_thank_you_for_purchase">구매해 주셔서 감사합니다! 저희 앱에 문제가 있으시면 연락해 주십시오.</string>
+    <string name="af_try_again_later">나중에 다시 시도하세요</string>
+    <string name="af_ad">광고</string>
+    <string name="af_dont_show_again">다시 보지 않기</string>
+    <string name="af_no_thanks">아뇨, 괜찮습니다</string>
+    <string name="af_share_our_app">앱 공유하기</string>
+    <string name="af_free">무료</string>
+
     <!-- appearance -->
     <string name="af_theme">테마</string>
     <string name="af_theme_dark">어두움</string>
@@ -79,6 +90,7 @@
     <string name="af_use">사용</string>
     <string name="af_use_std_recognition_app">표준 음성 인식 앱 사용</string>
     <string name="af_vibrate_title">"진동"</string>
+
     <!-- voice input -->
     <string name="af_voice_input">음성 입력</string>
     <string name="af_voice_input_prompt">지금 말하세요</string>
@@ -86,4 +98,8 @@
     <string name="af_welcome">"환영합니다."</string>
     <string name="af_yes">예</string>
     <string name="af_you_can_do_it_later_in_settings">설정에서 나중에 할 수 있습니다.</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">앱 메뉴 열기</string>
+
 </resources>

@@ -62,6 +62,12 @@
     <string name="af_deleted">हटाया गया</string>
     <string name="af_restored">पुनर्स्थापित किया गया</string>
     <string name="af_you_can_do_it_later_in_settings">आप इसे सेटिंग में बाद में कर सकते हैं</string>
+    <string name="af_try_again_later">बाद में दोबारा प्रयास करें</string>
+    <string name="af_ad">विज्ञापन</string>
+    <string name="af_dont_show_again">दोबारा न दिखाएं</string>
+    <string name="af_no_thanks">जी नहीं, धन्यवाद</string>
+    <string name="af_share_our_app">हमारा ऐप साझा करें</string>
+    <string name="af_free">नि: शुल्क</string>
 
     <!-- advertisement -->
     <string name="af_remove_ad">विज्ञापन निकालें</string>
@@ -81,11 +87,17 @@
     <string name="af_show_recognition_vars">पहचान भिन्न दिखाएं</string>
     <string name="af_no_app_to_recognize_voice">आवाज़ पहचानने के लिय कोई ऐप नहीं है</string>
     <string name="af_recognition_language">अभिज्ञान भाषा</string>
+
     <!-- billing -->
     <string name="af_billing_is_not_supported_on_your_device">बिलिंग आपकी डिवाइस पर समर्थित नहीं है। कृपया Google प्ले संस्करण अपडेट करें।</string>
     <string name="af_thank_you_for_purchase">आपकी खरीदारी के लिए धन्यवाद। यदि आप हमारे ऐप में किसी समस्या का अनुभव करते हैं, तो कृपया हमसे संपर्क करें।</string>
+    <string name="af_purchase_fail">खरीदारी विफल होती है</string>
+
     <!-- rate -->
     <string name="af_rate_prompt">इस ऐप को लाइक करें? <xliff:g>\n</xliff:g> Google प्ले पर रेट करें!</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">एप्लिकेशन मेनू खोलें</string>
 
     <string name="af_cant_get_rec_lang_list">उपलब्ध भाषाएं नहीं मिल सकतीं</string>
     <string name="af_network_error">नेटवर्क त्रुटी। इंटरनेट कनेक्शन की जांच करें</string>
