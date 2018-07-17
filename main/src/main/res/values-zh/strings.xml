@@ -61,6 +61,12 @@
     <string name="af_deleted">已删除</string>
     <string name="af_restored">已还原</string>
     <string name="af_you_can_do_it_later_in_settings">您可以稍后在设置中进行设置</string>
+    <string name="af_try_again_later">稍后再试</string>
+    <string name="af_ad">广告</string>
+    <string name="af_dont_show_again">不要再显示</string>
+    <string name="af_no_thanks">不，谢谢了</string>
+    <string name="af_share_our_app">分享我们的应用程序</string>
+    <string name="af_free">免费</string>
 
     <!-- advertisement -->
     <string name="af_remove_ad">移除广告</string>
@@ -80,11 +86,17 @@
     <string name="af_show_recognition_vars">显示识别变体</string>
     <string name="af_no_app_to_recognize_voice">没有语音识别应用程序</string>
     <string name="af_recognition_language">识别语言</string>
+
     <!-- billing -->
     <string name="af_billing_is_not_supported_on_your_device">您的设备不支持计费。请更新Google Play版本。</string>
     <string name="af_thank_you_for_purchase">感谢您的购买！如果您在使用我们的应用程序时遇到任何问题，请联系我们。</string>
+    <string name="af_purchase_fail">购买失败</string>
+
     <!-- rate -->
     <string name="af_rate_prompt">喜欢这款应用程序？<xliff:g>\n</xliff:g>在Google Play进行评价！</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">打开应用程序菜单</string>
 
     <string name="af_cant_get_rec_lang_list">无法获取可用语言</string>
     <string name="af_network_error">网络错误。请检查互联网连接</string>

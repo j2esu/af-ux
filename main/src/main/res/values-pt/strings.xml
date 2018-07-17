@@ -83,4 +83,15 @@
     <string name="af_welcome">"Bem-vindo"</string>
     <string name="af_yes">Sim</string>
     <string name="af_you_can_do_it_later_in_settings">Você pode fazer isto mais tarde nas configurações</string>
+    <string name="af_purchase_fail">Falha na compra</string>
+    <string name="af_try_again_later">Tente novamente mais tarde</string>
+    <string name="af_ad">Anúncio</string>
+    <string name="af_dont_show_again">Não mostrar novamente</string>
+    <string name="af_no_thanks">Não, obrigado</string>
+    <string name="af_share_our_app">Compartilhe nosso app</string>
+    <string name="af_free">Grátis</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">Abrir menu do app</string>
+
 </resources>

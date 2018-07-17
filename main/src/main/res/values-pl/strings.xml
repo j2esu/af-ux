@@ -79,5 +79,15 @@
     <string name="af_welcome">Witamy</string>
     <string name="af_yes">Tak</string>
     <string name="af_you_can_do_it_later_in_settings">Możesz to zrobić później w ustawieniach</string>
+    <string name="af_purchase_fail">Zakup nie powiódł się</string>
+    <string name="af_try_again_later">Spróbuj ponownie później</string>
+    <string name="af_ad">Reklama</string>
+    <string name="af_dont_show_again">Nie pokazuj ponownie</string>
+    <string name="af_no_thanks">Nie, dziękuję</string>
+    <string name="af_share_our_app">Udostępnij naszą aplikację</string>
+    <string name="af_free">Darmova</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">Otwórz menu aplikacji</string>
 
 </resources>

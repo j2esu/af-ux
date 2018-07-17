@@ -61,6 +61,12 @@
     <string name="af_deleted">削除されました</string>
     <string name="af_restored">復元する</string>
     <string name="af_you_can_do_it_later_in_settings">後ほど設定から変更できます</string>
+    <string name="af_try_again_later">後で再度お試しください</string>
+    <string name="af_ad">広告</string>
+    <string name="af_dont_show_again">非表示にする</string>
+    <string name="af_no_thanks">いいえ、結構です</string>
+    <string name="af_share_our_app">アプリを共有</string>
+    <string name="af_free">無料</string>
 
     <!-- advertisement -->
     <string name="af_remove_ad">広告を削除する</string>
@@ -80,11 +86,17 @@
     <string name="af_show_recognition_vars">認識するバリエーションを表示する</string>
     <string name="af_no_app_to_recognize_voice">音声を認識するアプリがありません</string>
     <string name="af_recognition_language">認識する言語</string>
+
     <!-- billing -->
     <string name="af_billing_is_not_supported_on_your_device">お使いのデバイスでは課金がサポートされていません。Google Playでバージョンのアップデートを行なってください。</string>
     <string name="af_thank_you_for_purchase">ご購入いただきありがとうございます！アプリに何らかの問題が生じた場合は、ご遠慮なく当方へお問い合わせくださいませ。</string>
+    <string name="af_purchase_fail">購入に失敗</string>
+
     <!-- rate -->
     <string name="af_rate_prompt">アプリは気に入っていただけましたか？ <xliff:g>\n</xliff:g> Google Playで評価をお願いいたします！</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">アプリケーションのメニューを開く</string>
 
     <string name="af_cant_get_rec_lang_list">利用可能な言語を取得できませんでした</string>
     <string name="af_network_error">ネットワークエラー。インターネットに接続されているかご確認ください</string>
