@@ -7,13 +7,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.Settings;
 import android.speech.RecognizerIntent;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresPermission;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,10 +39,7 @@ public class AfIntents {
         }
 
         public static Intent installVoiceRecognition() {
-            String url = Build.VERSION.SDK_INT < 16 ?
-                    "https://play.google.com/store/apps/details?id=com.google.android.voicesearch" :
-                    "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox";
-            return openUrl(url);
+            return openUrl("https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox");
         }
 
         public static ArrayList<String> getRecognitionResults(Intent intent) {
@@ -74,21 +71,38 @@ public class AfIntents {
     }
 
     public static boolean safeStart(Activity activity, Intent intent, int requestCode) {
+        return safeStartInner(activity, intent, true, requestCode);
+    }
+
+    private static boolean safeStartInner(Context context, Intent intent, boolean forResult, int requestCode) {
         //check can start
-        if (intent == null || intent.resolveActivity(activity.getPackageManager()) == null)
+        if (intent == null || intent.resolveActivity(context.getPackageManager()) == null) {
             return false;
+        }
         //try start
         try {
-            if (requestCode >= 0) activity.startActivityForResult(intent, requestCode);
-            else activity.startActivity(intent);
+            if (forResult) ((Activity) context).startActivityForResult(intent, requestCode);
+            else context.startActivity(intent);
             return true;
         } catch (SecurityException ex) {//happens sometimes on fantastic devices
             return false;
         }
     }
 
-    public static boolean safeStart(Activity activity, Intent intent) {
-        return safeStart(activity, intent, -1);
+    public static boolean safeStart(Context context, Intent intent) {
+        return safeStartInner(context, intent, false, -1);
+    }
+
+    public static void startOrChooser(Context context, Intent intent) {
+        if (!AfIntents.safeStart(context, intent)) {
+            context.startActivity(Intent.createChooser(intent, null));
+        }
+    }
+
+    public static void startOrToast(Context context, Intent intent) {
+        if (!AfIntents.safeStart(context, intent)) {
+            Toast.makeText(context, R.string.af_no_apps_found, Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Nullable
