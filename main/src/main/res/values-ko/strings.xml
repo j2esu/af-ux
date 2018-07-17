@@ -45,7 +45,7 @@
     <string name="af_not_now">"나중에"</string>
     <string name="af_notifications">"알림"</string>
     <string name="af_open">열기 위해</string>
-    <string name="af_other_prefs_title">또 다른</string>
+    <string name="af_other">또 다른</string>
     <string name="af_primary_color">기본 색</string>
     <string name="af_privacy_policy">개인 정보 정책</string>
     <string name="af_rate">평가하기</string>
@@ -80,6 +80,7 @@
     <string name="af_no_thanks">아뇨, 괜찮습니다</string>
     <string name="af_share_our_app">앱 공유하기</string>
     <string name="af_free">무료</string>
+    <string name="af_title">직위</string>
 
     <!-- appearance -->
     <string name="af_theme">테마</string>

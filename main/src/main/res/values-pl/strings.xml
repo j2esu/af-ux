@@ -38,7 +38,7 @@
     <string name="af_not_now">Nie teraz</string>
     <string name="af_notifications">Powiadomienia</string>
     <string name="af_open">Otwierać</string>
-    <string name="af_other_prefs_title">Inny</string>
+    <string name="af_other">Inny</string>
     <string name="af_primary_color">Kolor podstawowy</string>
     <string name="af_privacy_policy">Polityka prywatności</string>
     <string name="af_rate">Ocenić</string>
@@ -86,6 +86,7 @@
     <string name="af_no_thanks">Nie, dziękuję</string>
     <string name="af_share_our_app">Udostępnij naszą aplikację</string>
     <string name="af_free">Darmova</string>
+    <string name="af_title">Tytuł</string>
 
     <!-- content description -->
     <string name="af_cd_open_application_menu">Otwórz menu aplikacji</string>

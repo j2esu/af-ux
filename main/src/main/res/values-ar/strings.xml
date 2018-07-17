@@ -38,6 +38,7 @@
     <string name="af_no_thanks">لا، شكرًا</string>
     <string name="af_share_our_app">مشاركة التطبيق</string>
     <string name="af_free">مجانا</string>
+    <string name="af_title">لقب</string>
 
     <!-- appearance -->
     <string name="af_theme">السمة</string>
@@ -88,7 +89,7 @@
     <string name="af_no">لا</string>
     <string name="af_no_contacts_found">لم يتم العثور على جهات اتصال</string>
     <string name="af_open">لفتح</string>
-    <string name="af_other_prefs_title">أخرى</string>
+    <string name="af_other">أخرى</string>
     <string name="af_privacy_policy">سياسة الخصوصية</string>
     <string name="af_rate">تقييم</string>
     <string name="af_recent_items_title">الاخير</string>

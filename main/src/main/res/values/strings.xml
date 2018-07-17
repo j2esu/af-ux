@@ -31,11 +31,12 @@
     <string name="af_app_info">App info</string>
     <string name="af_vibrate_title">Vibrate</string>
     <string name="af_try_again_later">Try again later</string>
-    <string name="af_ad">af_Ad</string>
+    <string name="af_ad">Ad</string>
     <string name="af_dont_show_again">Don\'t show again</string>
     <string name="af_no_thanks">No, thanks</string>
     <string name="af_share_our_app">Share our app</string>
     <string name="af_free">Free</string>
+    <string name="af_title">Title</string>
 
     <string name="af_removed">Removed</string>
     <string name="af_clear">Clear</string>
@@ -52,7 +53,7 @@
     <string name="af_set_as_default">Set as default</string>
     <string name="af_change">Change</string>
     <string name="af_recent_items_title">Recent</string>
-    <string name="af_other_prefs_title">Other</string>
+    <string name="af_other">Other</string>
     <string name="af_contact_us">Contact us</string>
     <string name="af_apps">Apps</string>
     <string name="af_contacts">Contacts</string>
