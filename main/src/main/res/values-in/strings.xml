@@ -33,6 +33,7 @@
     <string name="af_no_thanks">Tidak, terima kasih</string>
     <string name="af_share_our_app">Bagikan aplikasi kami</string>
     <string name="af_free">Gratis</string>
+    <string name="af_title">Gelar</string>
 
     <!-- appearance -->
     <string name="af_theme">Tema</string>
@@ -84,7 +85,7 @@
     <string name="af_no">Tidak</string>
     <string name="af_no_contacts_found">Tidak ada kontak yang ditemukan</string>
     <string name="af_open">Membuka</string>
-    <string name="af_other_prefs_title">Lain</string>
+    <string name="af_other">Lain</string>
     <string name="af_privacy_policy">Kebijakan pribadi</string>
     <string name="af_rate">Menilai</string>
     <string name="af_recent_items_title">Aktuil</string>

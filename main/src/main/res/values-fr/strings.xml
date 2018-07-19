@@ -34,6 +34,7 @@
     <string name="af_no_thanks">Non, merci</string>
     <string name="af_share_our_app">Partagez notre appli</string>
     <string name="af_free">Gratuit</string>
+    <string name="af_title">Titre</string>
 
     <!-- appearance -->
     <string name="af_theme">Thème</string>
@@ -84,7 +85,7 @@
     <string name="af_no">Non</string>
     <string name="af_no_contacts_found">Aucun contact trouvé</string>
     <string name="af_open">Ouvrir</string>
-    <string name="af_other_prefs_title">Autre</string>
+    <string name="af_other">Autre</string>
     <string name="af_privacy_policy">Politique de confidentialité</string>
     <string name="af_rate">Évaluer</string>
     <string name="af_recent_items_title">Récent</string>

@@ -43,7 +43,7 @@
     <string name="af_not_now">"Не сейчас"</string>
     <string name="af_notifications">"Уведомления"</string>
     <string name="af_open">Открыть</string>
-    <string name="af_other_prefs_title">Другое</string>
+    <string name="af_other">Другое</string>
     <string name="af_primary_color">Основной цвет</string>
     <string name="af_privacy_policy">Конфиденциальность</string>
     <string name="af_rate">Оценить</string>
@@ -92,6 +92,7 @@
     <string name="af_no_thanks">Нет, спасибо</string>
     <string name="af_share_our_app">Рассказать о приложении</string>
     <string name="af_free">Бесплатно</string>
+    <string name="af_title">Название</string>
 
     <!-- content description -->
     <string name="af_cd_open_application_menu">Открыть меню приложения</string>

@@ -41,7 +41,7 @@
     <string name="af_set_as_default">设为默认</string>
     <string name="af_change">更改</string>
     <string name="af_recent_items_title">最近</string>
-    <string name="af_other_prefs_title">其他</string>
+    <string name="af_other">其他</string>
     <string name="af_contact_us">联系我们</string>
     <string name="af_apps">应用程序</string>
     <string name="af_contacts">联系人</string>
@@ -67,6 +67,7 @@
     <string name="af_no_thanks">不，谢谢了</string>
     <string name="af_share_our_app">分享我们的应用程序</string>
     <string name="af_free">免费</string>
+    <string name="af_title">标题</string>
 
     <!-- advertisement -->
     <string name="af_remove_ad">移除广告</string>

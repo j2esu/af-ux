@@ -42,7 +42,7 @@
     <string name="af_set_as_default">डिफ़ॉल्ट के रूप में सेट करें</string>
     <string name="af_change">बदलें</string>
     <string name="af_recent_items_title">हालिया</string>
-    <string name="af_other_prefs_title">अन्य</string>
+    <string name="af_other">अन्य</string>
     <string name="af_contact_us">हमसे संपर्क करें</string>
     <string name="af_apps">ऐप्स</string>
     <string name="af_contacts">संपर्क</string>
@@ -68,6 +68,7 @@
     <string name="af_no_thanks">जी नहीं, धन्यवाद</string>
     <string name="af_share_our_app">हमारा ऐप साझा करें</string>
     <string name="af_free">नि: शुल्क</string>
+    <string name="af_title">शीर्षक</string>
 
     <!-- advertisement -->
     <string name="af_remove_ad">विज्ञापन निकालें</string>
