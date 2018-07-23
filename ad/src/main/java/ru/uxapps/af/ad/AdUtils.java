@@ -10,7 +10,7 @@ import com.google.android.gms.ads.AdRequest;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-class AdUtils {
+public class AdUtils {
 
     private AdUtils() {}
 
