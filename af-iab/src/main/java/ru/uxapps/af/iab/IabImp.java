@@ -50,7 +50,7 @@ public class IabImp implements Iab, ServiceConnection {
 
     //null when disconnected
     private IInAppBillingService mService;
-    private boolean mConnectRequested;
+    private boolean mBind;
     private boolean mAvailable;
 
     public IabImp(Context context, String publicKey, int requestCode, Callback callback) {
@@ -60,36 +60,42 @@ public class IabImp implements Iab, ServiceConnection {
         mCallback = callback;
     }
 
-    private void assertConnectionRequested() {
-        if (!mConnectRequested) throw new RuntimeException("Should request connection");
+    private void assertBind() {
+        if (!mBind) throw new IllegalStateException("Iab is not bind");
     }
 
     @Override
-    public boolean connect() {
-        mConnectRequested = true;
+    public boolean bind() {
+        mBind = true;
         Intent serviceIntent = new Intent("com.android.vending.billing.InAppBillingService.BIND")
                 .setPackage("com.android.vending");
         mAvailable = mContext.bindService(serviceIntent, this, Context.BIND_AUTO_CREATE);
-        if (!mAvailable) mCallback.onConnectNotAvailable(this);
+        if (!mAvailable) mCallback.onBindNotAvailable(this);
         return mAvailable;
     }
 
     @Override
+    public void unbind() {
+        mContext.unbindService(this);
+        mService = null;
+        mBind = false;
+    }
+
+    @Override
     public boolean isConnected() {
+        assertBind();
         return mService != null;
     }
 
     @Override
     public boolean isAvailable() {
-        assertConnectionRequested();
+        assertBind();
         return mAvailable;
     }
 
     @Override
-    public void disconnect() {
-        mContext.unbindService(this);
-        mService = null;
-        mConnectRequested = false;
+    public boolean isBind() {
+        return mBind;
     }
 
     @Override
@@ -105,44 +111,55 @@ public class IabImp implements Iab, ServiceConnection {
     }
 
     @Override
-    public boolean requestPurchase(Activity activity, String itemId) {
-        assertConnectionRequested();
-        if (!mAvailable) return false;//no callback pending
+    public void requestPurchase(Activity activity, String itemId) {
+        assertBind();
 
-        if (mService != null) {
-            try {
-                Bundle buyIntentBundle = mService.getBuyIntent(IAB_VERSION, mContext.getPackageName(),
-                        itemId, VALUE_INAPP, null);
-                if (buyIntentBundle != null && buyIntentBundle.getInt(KEY_RESPONSE_CODE) == RESPONSE_CODE_OK) {
-                    PendingIntent pendingIntent = buyIntentBundle.getParcelable(KEY_BUY_INTENT);
-                    if (pendingIntent != null) {
-                        activity.startIntentSenderForResult(pendingIntent.getIntentSender(),
-                                mRequestCode, new Intent(), 0, 0, 0);
-                        return true;//waiting result from activity
-                    }
-                }
-            } catch (RemoteException | IntentSender.SendIntentException e) {
-                Log.e(TAG, "request purchase fail: ", e);
-            }
+        //first check available, if not available means also not connected
+        if (!isAvailable()) {
+            mCallback.onPurchase(Result.NOT_AVAILABLE, itemId);
+            return;
         }
-        //if not return in success way - fail immediately
-        mCallback.onPurchase(RESULT_ERROR, itemId);
-        return true;
+        //then check if connected
+        if (!isConnected()) {
+            mCallback.onPurchase(Result.NOT_CONNECTED, itemId);
+            return;
+        }
+
+        try {
+            Bundle buyIntentBundle = mService.getBuyIntent(IAB_VERSION, mContext.getPackageName(),
+                    itemId, VALUE_INAPP, null);
+            if (buyIntentBundle != null && buyIntentBundle.getInt(KEY_RESPONSE_CODE) == RESPONSE_CODE_OK) {
+                PendingIntent pendingIntent = buyIntentBundle.getParcelable(KEY_BUY_INTENT);
+                if (pendingIntent != null) {
+                    activity.startIntentSenderForResult(pendingIntent.getIntentSender(),
+                            mRequestCode, new Intent(), 0, 0, 0);
+                    return;//waiting result from activity
+                }
+            }
+        } catch (RemoteException | IntentSender.SendIntentException e) {
+            Log.e(TAG, "request purchase fail: ", e);
+        }
+        //if not return in success way - fail with error
+        mCallback.onPurchase(Result.ERROR, itemId);
     }
 
     @Override
-    public boolean requestConsume(String itemId) {
-        assertConnectionRequested();
-        if (!mAvailable) return false;//no callback pending
+    public void requestConsume(String itemId) {
+        assertBind();
+
+        if (!isAvailable() || !isConnected()) {
+            mCallback.onConsume(false, itemId);
+            return;
+        }
         //start async operation
         new ConsumePurchaseAsync(this).execute(itemId);
-        return true;
     }
 
     @Override
     public List<String> getOwnedItems() {
-        assertConnectionRequested();
-        if (!isConnected()) return null;
+        assertBind();
+
+        if (!isAvailable() || !isConnected()) return null;
 
         List<String> ownedItems = null;
         try {
@@ -177,17 +194,17 @@ public class IabImp implements Iab, ServiceConnection {
             itemId = getItemId(intent);
             switch (getResponseCode(intent)) {
                 case RESPONSE_CODE_OK:
-                    mCallback.onPurchase(RESULT_OK, itemId);
+                    mCallback.onPurchase(Result.OK, itemId);
                     return;
                 case RESPONSE_CODE_CANCELED_BY_USER:
-                    mCallback.onPurchase(RESULT_USER_CANCEL, itemId);
+                    mCallback.onPurchase(Result.USER_CANCEL, itemId);
                     return;
                 case RESPONSE_CODE_NETWORK_ERROR:
-                    mCallback.onPurchase(RESULT_NO_NETWORK, itemId);
+                    mCallback.onPurchase(Result.NO_NETWORK, itemId);
                     return;
             }
         }
-        mCallback.onPurchase(RESULT_ERROR, itemId);
+        mCallback.onPurchase(Result.ERROR, itemId);
     }
 
     private int getResponseCode(Intent intent) {
@@ -250,6 +267,7 @@ public class IabImp implements Iab, ServiceConnection {
 
         @Override
         protected void onPostExecute(Object[] data) {
+            //if no ref - no callback will be dispatched
             if (mOuter.get() != null) {
                 mOuter.get().mCallback.onConsume((int) data[0] == RESPONSE_CODE_OK, (String) data[1]);
             }

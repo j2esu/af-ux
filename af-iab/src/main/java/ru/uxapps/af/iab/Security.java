@@ -37,7 +37,7 @@ import java.security.spec.X509EncodedKeySpec;
  * make it harder for an attacker to replace the code with stubs that treat all
  * purchases as verified.
  */
-public class Security {
+class Security {
     private static final String TAG = "IABUtil/Security";
 
     private static final String KEY_FACTORY_ALGORITHM = "RSA";
