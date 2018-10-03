@@ -1,1 +1,1 @@
-include ':app-demo', ':main', ':live', ':rv', ':iab', ':ad', ':ad-stub', ':base', ':iab-test'
+include ':demo', ':af', ':af-live', ':af-rv', ':af-iab', ':af-ad', ':af-ad-stub', ':af-base'
