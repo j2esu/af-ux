@@ -3,6 +3,8 @@ package ru.uxapps.af.ad;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.provider.Settings;
 
 import com.google.android.gms.ads.AdRequest;
@@ -13,6 +15,12 @@ import java.security.NoSuchAlgorithmException;
 public class AdUtils {
 
     private AdUtils() {}
+
+    public static boolean hasConnection(Context context) {
+        ConnectivityManager connect = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = connect != null ? connect.getActiveNetworkInfo() : null;
+        return netInfo != null && netInfo.isConnectedOrConnecting();
+    }
 
     public static AdRequest buildRequest(Context context, boolean testMode) {
         AdRequest.Builder requestBuilder = new AdRequest.Builder();

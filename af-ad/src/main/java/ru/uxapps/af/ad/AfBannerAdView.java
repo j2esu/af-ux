@@ -3,8 +3,6 @@ package ru.uxapps.af.ad;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.res.TypedArray;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
@@ -17,7 +15,22 @@ import com.google.android.gms.ads.MobileAds;
 
 import ru.uxapps.af_ad.R;
 
+/**
+ * Use view visibility to hide/show ad
+ *
+ * <strong>Attrs:</strong>
+ * <pre>
+ * app:adSize - one of {@link Size}(similar to {@link AdSize}) (default - {@link Size#BANNER})
+ * app:appId - app ad id (REQUIRED)
+ * app:unitId - unit ad id (REQUIRED)
+ * </pre>
+ *
+ */
 public class AfBannerAdView extends FrameLayout {
+
+    public enum Size {
+        BANNER, SMART, FLUID
+    }
 
     private static final int SCHEDULING_MS = 5000;
 
@@ -25,11 +38,11 @@ public class AfBannerAdView extends FrameLayout {
 
     private final boolean mDebug;
     private final String mUnitId;
+    private final String mBannerSize;
 
     @Nullable
     private AdView mAdView;
     private boolean mLoaded;
-    private boolean mEnabled;
 
     @Nullable
     private Runnable mScheduled;
@@ -52,7 +65,7 @@ public class AfBannerAdView extends FrameLayout {
                 sInit = true;
             }
             mUnitId = styledAttrs.getString(R.styleable.AfBannerAdView_unitId);
-            mEnabled = styledAttrs.getBoolean(R.styleable.AfBannerAdView_adEnabled, false);
+            mBannerSize = styledAttrs.getString(R.styleable.AfBannerAdView_bannerSize);
         } finally {
             styledAttrs.recycle();
         }
@@ -63,7 +76,13 @@ public class AfBannerAdView extends FrameLayout {
         super.onAttachedToWindow();
         mAdView = new AdView(getContext());
         mAdView.setAdUnitId(mUnitId);
-        mAdView.setAdSize(AdSize.SMART_BANNER);
+        //set size
+        if (Size.SMART.name().equals(mBannerSize)) mAdView.setAdSize(AdSize.SMART_BANNER);
+        else if (Size.FLUID.name().equals(mBannerSize)) mAdView.setAdSize(AdSize.FLUID);
+        else if (Size.BANNER.name().equals(mBannerSize) || mBannerSize == null) {
+            mAdView.setAdSize(AdSize.BANNER);
+        } else throw new IllegalArgumentException("Unknown banner size: " + mBannerSize);
+
         mAdView.setAdListener(new AdListener() {
             @Override
             public void onAdLoaded() {
@@ -76,7 +95,11 @@ public class AfBannerAdView extends FrameLayout {
             }
         });
         addView(mAdView, new FrameLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
-        setAdEnabled(mEnabled);
+        setAdVisible(isAdEnabled());
+    }
+
+    private boolean isAdEnabled() {
+        return getVisibility() == VISIBLE;
     }
 
     @Override
@@ -91,16 +114,21 @@ public class AfBannerAdView extends FrameLayout {
         mLoaded = false;
     }
 
-    public void setAdEnabled(boolean enabled) {
-        mEnabled = enabled;
+    @Override
+    public void setVisibility(int visibility) {
+        super.setVisibility(visibility);
+        setAdVisible(isAdEnabled());
+    }
+
+    private void setAdVisible(boolean visible) {
         if (mAdView == null) return;//detached, this method will be called again on attach
         //sync enabled state
-        if (!mEnabled) mAdView.setVisibility(GONE);
+        if (!visible) mAdView.setVisibility(GONE);
         else load();
     }
 
-    public void load() {
-        if (!mEnabled || mAdView == null) return;//disabled or detached, shouldn't load
+    private void load() {
+        if (!isAdEnabled()|| mAdView == null) return;//disabled or detached, shouldn't load
         if (mLoaded) {
             mAdView.setVisibility(VISIBLE);
             return;//already loaded
@@ -108,7 +136,7 @@ public class AfBannerAdView extends FrameLayout {
 
         //actually load, if not loaded
         mAdView.setVisibility(GONE);
-        if (hasConnection()) {
+        if (AdUtils.hasConnection(getContext())) {
             mAdView.setVisibility(VISIBLE);
             mAdView.loadAd(AdUtils.buildRequest(getContext(), mDebug));
         } else {
@@ -126,11 +154,5 @@ public class AfBannerAdView extends FrameLayout {
             }
         };
         postDelayed(mScheduled, SCHEDULING_MS);
-    }
-
-    private boolean hasConnection() {
-        ConnectivityManager connect = (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo netInfo = connect != null ? connect.getActiveNetworkInfo() : null;
-        return netInfo != null && netInfo.isConnectedOrConnecting();
     }
 }
