@@ -7,12 +7,12 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/ask_btn"
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="32dp"
-        android:text="Ask!"
+        android:text="Do smth!"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         />
 
