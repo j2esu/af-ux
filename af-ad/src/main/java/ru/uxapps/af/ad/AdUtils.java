@@ -22,21 +22,27 @@ public class AdUtils {
         return netInfo != null && netInfo.isConnectedOrConnecting();
     }
 
-    public static AdRequest buildRequest(Context context, boolean testMode) {
-        AdRequest.Builder requestBuilder = new AdRequest.Builder();
+    public static AdRequest buildRequest(Context context, boolean testMode, AdRequest.Builder builder) {
         if (testMode) {
-            requestBuilder.addTestDevice(AdRequest.DEVICE_ID_EMULATOR);
-            //add current device
-            @SuppressLint("HardwareIds")
-            String androidId = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
-            requestBuilder.addTestDevice(md5(androidId).toUpperCase());
+            builder.addTestDevice(AdRequest.DEVICE_ID_EMULATOR);
+            builder.addTestDevice(getDeviceId(context));
         }
-        AdRequest adRequest = requestBuilder.build();
-        if (testMode && !adRequest.isTestDevice(context)) {
+        AdRequest request = builder.build();
+        if (testMode && !request.isTestDevice(context)) {
             //just throw (debug mode)
             throw new RuntimeException("Request test ad, but created ad is not test");
         }
-        return adRequest;
+        return request;
+    }
+
+    public static AdRequest buildRequest(Context context, boolean testMode) {
+        return buildRequest(context, testMode, new AdRequest.Builder());
+    }
+
+    public static String getDeviceId(Context context) {
+        @SuppressLint("HardwareIds")
+        String androidId = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
+        return md5(androidId).toUpperCase();
     }
 
     private static String md5(String s) {
