@@ -4,7 +4,7 @@
     <declare-styleable name="AfBannerAdView">
         <attr name="unitId" format="string|reference"/>
         <attr name="appId" format="string|reference"/>
-        <attr name="bannerSize" format="boolean|reference"/>
+        <attr name="bannerSize" format="string|reference"/>
     </declare-styleable>
 
 </resources>
