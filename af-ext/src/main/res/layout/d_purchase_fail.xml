@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ru.uxapps.af.view.AfImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/sh_oval"
+            android:padding="12dp"
+            android:contentDescription="@string/purchase_fails"
+            app:backgroundTint="@color/buy_pro"
+            app:srcCompat="@drawable/ic_fail"
+            app:tint="@android:color/white"
+            tools:ignore="MissingPrefix"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_margin="24dp"
+            android:text="@string/purchase_failed_description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:id="@+id/d_purchase_fail_ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textColor="@color/buy_pro"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

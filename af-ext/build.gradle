@@ -14,7 +14,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -34,7 +34,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    api 'ru.uxapps:af:1.0.2'
+    api 'ru.uxapps:af:1.0.3'
     api 'ru.uxapps:af-iab:1.1.0'
     api 'ru.uxapps:af-live:1.0.3'
 }
