@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatDialogFragment;
 import android.view.View;
 
 import ru.uxapps.af.AfViews;
-import ru.uxapps.af.R;
+import ru.uxapps.af_ext.R;
 
 public class PurchaseFailDialog extends AppCompatDialogFragment {
 

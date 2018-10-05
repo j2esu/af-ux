@@ -6,7 +6,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatDialogFragment;
 
-import ru.uxapps.af.R;
+import ru.uxapps.af_ext.R;
+
 
 public class BillingNotSupportedDialog extends AppCompatDialogFragment {
 
