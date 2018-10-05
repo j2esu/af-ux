@@ -56,6 +56,9 @@
     <string name="af_recognition_language">Lingua di riconoscimento</string>
 
     <!-- billing -->
+    <string name="af_buy_premium">Acquista Premium</string>
+    <string name="af_purchase_failed_description">Acquisto fallito. Siamo spiacenti! Non possiedi l\'app Google Play installata sul telefono.</string>
+    <string name="af_purchase_succeed">Acquisto riuscito</string>
     <string name="af_billing_is_not_supported_on_your_device">Fatturazione non supportata su questo dispositivo. Aggiornare Google Play alla nuova versione.</string>
     <string name="af_thank_you_for_purchase">Grazie per aver effettuato l\'acquisto! Si prega di contattarci in caso di problemi con la nostra applicazione.</string>
     <string name="af_purchase_fail">Acquisto non riuscito</string>

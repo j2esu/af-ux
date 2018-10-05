@@ -56,6 +56,9 @@
     <string name="af_recognition_language">Langue de détection</string>
 
     <!-- billing -->
+    <string name="af_buy_premium">Achetez Premium</string>
+    <string name="af_purchase_failed_description">L\'achat échoue. Nous en sommes désolés ! Il se peut que l\'application Google Play ne soit pas installée sur votre téléphone.</string>
+    <string name="af_purchase_succeed">Achat réussi</string>
     <string name="af_billing_is_not_supported_on_your_device">La facturation n\'est pas prise en charge sur votre appareil. Veuillez mettre à jour votre version de Google Play.</string>
     <string name="af_thank_you_for_purchase">Merci de votre achat ! N\'hésitez pas à nous contacter si vous avez des problèmes avec notre application.</string>
     <string name="af_purchase_fail">Échec de l\'achat</string>

@@ -56,6 +56,9 @@
     <string name="af_recognition_language">Idioma de reconocimiento</string>
 
     <!-- billing -->
+    <string name="af_buy_premium">Comprar premium</string>
+    <string name="af_purchase_failed_description">No se pudo realizar la compra. Lo sentimos. Puede que no tenga la aplicación Google Play instalada en su teléfono.</string>
+    <string name="af_purchase_succeed">Compra exitosa</string>
     <string name="af_billing_is_not_supported_on_your_device">La facturación no es compatible con el dispositivo. Por favor actualiza la versión de Google Play.</string>
     <string name="af_thank_you_for_purchase">¡Gracias por tu compra! Por favor contáctanos si tienes problemas con nuestra app.</string>
     <string name="af_purchase_fail">Error en la compra</string>

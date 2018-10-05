@@ -56,6 +56,9 @@
     <string name="af_recognition_language">Stimmerkennungssprache</string>
 
     <!-- billing -->
+    <string name="af_buy_premium">Premium kaufen</string>
+    <string name="af_purchase_failed_description">Der Kauf ist fehlgeschlagen. Das tut uns Leid! Möglicherweise ist die Google-Play-Anwendung nicht auf Ihrem Handy installiert.</string>
+    <string name="af_purchase_succeed">Der Kauf war erfolgreich</string>
     <string name="af_billing_is_not_supported_on_your_device">Abrechnungen werden von Ihrem Gerät nicht unterstützt. Bitte aktualisieren Sie die Google-Play-Version.</string>
     <string name="af_thank_you_for_purchase">Vielen Dank für Ihren Einkauf! Bitte kontaktieren Sie uns, wenn Sie auf irgendwelche Schwierigkeiten bei unserer App stoßen sollten.</string>
     <string name="af_purchase_fail">Kauf fehlgeschlagen</string>
@@ -106,5 +109,4 @@
     <string name="af_restore_defaults">Standardeinstellungen wiederherstellen</string>
     <string name="af_use_std_recognition_app">Verwenden Sie die Standard-Spracherkennungs-App</string>
     <string name="af_want_more_features">Möchten Sie weitere Funktionen?</string>
-
 </resources>

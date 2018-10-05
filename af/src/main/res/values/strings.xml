@@ -91,9 +91,12 @@
     <string name="af_recognition_language">Recognition language</string>
 
     <!-- billing -->
+    <string name="af_buy_premium">Buy Premium</string>
     <string name="af_billing_is_not_supported_on_your_device">Billing is not supported on your device. Please update Google Play version.</string>
     <string name="af_thank_you_for_purchase">Thank you for your purchase! Please contact us if you have any problems with our app.</string>
     <string name="af_purchase_fail">Purchase fails</string>
+    <string name="af_purchase_succeed">Purchase succeed</string>
+    <string name="af_purchase_failed_description">Purchase failed. We are sorry about that! You may not have the Google Play app installed on your phone.</string>
 
     <!-- rate -->
     <string name="af_rate_prompt">Like this app?<xliff:g>\n</xliff:g>Rate on Google Play!</string>
@@ -107,5 +110,4 @@
     <string name="af_restore_defaults">Restore defaults</string>
     <string name="af_want_more_features">Want more features?</string>
     <string name="af_new_app_already_available">Our new app <xliff:g id="app_name">%s</xliff:g> is already available on Google Play!</string>
-
 </resources>

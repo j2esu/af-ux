@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Billing -->
+    <string name="af_buy_premium">Kup wersję Premium</string>
+    <string name="af_purchase_failed_description">Zakup się nie powiódł. Przykro nam! Możesz nie mieć aplikacji Google Play zainstalowanej w telefonie.</string>
+    <string name="af_purchase_succeed">Zakup się powiódł</string>
+    <string name="af_billing_is_not_supported_on_your_device">Rozliczenia nie są obsługiwane na tym urządzeniu. Zaktualizuj wersję Google Play.</string>
+
     <string name="af_accounts">Konta</string>
     <string name="af_action_cant_be_undo">"Nie można tego cofnąć."</string>
     <string name="af_ad_will_appear_after_trial">Po zakończeniu okresu próbnego tutaj pojawi się reklama</string>
@@ -9,7 +16,6 @@
     <string name="af_appearance_prefs_title">Wygląd</string>
     <string name="af_apply">Stosować</string>
     <string name="af_apps">Aplikacje</string>
-    <string name="af_billing_is_not_supported_on_your_device">Rozliczenia nie są obsługiwane na tym urządzeniu. Zaktualizuj wersję Google Play.</string>
     <string name="af_by_default">Domyślnie</string>
     <string name="af_cant_get_rec_lang_list">Nie można uzyskać dostępnych języków</string>
     <string name="af_change">Zmienić</string>
@@ -90,5 +96,4 @@
 
     <!-- content description -->
     <string name="af_cd_open_application_menu">Otwórz menu aplikacji</string>
-
 </resources>

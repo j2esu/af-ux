@@ -89,6 +89,9 @@
     <string name="af_recognition_language">認識する言語</string>
 
     <!-- billing -->
+    <string name="af_buy_premium">プレミアムを購入</string>
+    <string name="af_purchase_failed_description">購入は失敗です。申し訳ありませんが、あなたの携帯電話にはGoogle play アプリケーションがインストールされていない可能性があります。</string>
+    <string name="af_purchase_succeed">購入成功</string>
     <string name="af_billing_is_not_supported_on_your_device">お使いのデバイスでは課金がサポートされていません。Google Playでバージョンのアップデートを行なってください。</string>
     <string name="af_thank_you_for_purchase">ご購入いただきありがとうございます！アプリに何らかの問題が生じた場合は、ご遠慮なく当方へお問い合わせくださいませ。</string>
     <string name="af_purchase_fail">購入に失敗</string>

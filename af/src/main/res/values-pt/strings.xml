@@ -91,8 +91,10 @@
     <string name="af_share_our_app">Compartilhe nosso app</string>
     <string name="af_free">Grátis</string>
     <string name="af_title">Título</string>
+    <string name="af_buy_premium">Comprar Premium</string>
+    <string name="af_purchase_failed_description">Compra falhou. Lamentamos muito! Você pode não ter o aplicativo Google Play instalado em seu telefone.</string>
+    <string name="af_purchase_succeed">Compra com sucesso</string>
 
     <!-- content description -->
     <string name="af_cd_open_application_menu">Abrir menu do app</string>
-
 </resources>

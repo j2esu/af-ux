@@ -55,10 +55,12 @@
     <string name="af_recognition_language">Bahasa pengenalan</string>
 
     <!-- billing -->
+    <string name="af_buy_premium">Beli Premium</string>
+    <string name="af_purchase_failed_description">Pembelian gagal. Kami mohon maaf! Aplikasi Google Play mungkin tidak terpasang pada ponsel Anda.</string>
+    <string name="af_purchase_succeed">Pembelian berhasil</string>
     <string name="af_billing_is_not_supported_on_your_device">Penagihan tidak didukung di peranti Anda. Perbarui versi Google Play.</string>
     <string name="af_thank_you_for_purchase">Terima kasih atas pembelian Anda! Hubungi kami jika Anda menemui masalah dengan aplikasi kami.</string>
     <string name="af_purchase_fail">Pembelian gagal</string>
-
 
     <!-- rate -->
     <string name="af_rate_prompt">Suka aplikasi ini?<xliff:g>\n</xliff:g>Beri nilai di Google Play!</string>

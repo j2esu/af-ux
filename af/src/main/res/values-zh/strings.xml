@@ -89,6 +89,9 @@
     <string name="af_recognition_language">识别语言</string>
 
     <!-- billing -->
+    <string name="af_buy_premium">购买高级版</string>
+    <string name="af_purchase_failed_description">购买失败。我们对此感到遗憾！有可能是您手机上没有安装 Google Play 应用。</string>
+    <string name="af_purchase_succeed">购买成功</string>
     <string name="af_billing_is_not_supported_on_your_device">您的设备不支持计费。请更新Google Play版本。</string>
     <string name="af_thank_you_for_purchase">感谢您的购买！如果您在使用我们的应用程序时遇到任何问题，请联系我们。</string>
     <string name="af_purchase_fail">购买失败</string>

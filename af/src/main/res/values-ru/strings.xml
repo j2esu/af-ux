@@ -93,8 +93,10 @@
     <string name="af_share_our_app">Рассказать о приложении</string>
     <string name="af_free">Бесплатно</string>
     <string name="af_title">Название</string>
+    <string name="af_buy_premium">Купить Премиум</string>
+    <string name="af_purchase_failed_description">Ошибка покупки. Нам жаль, что так вышло! Возможно у Вас не установлено приложение Google Play.</string>
+    <string name="af_purchase_succeed">Платёж успешно совершён</string>
 
     <!-- content description -->
     <string name="af_cd_open_application_menu">Открыть меню приложения</string>
-
 </resources>

@@ -11,6 +11,9 @@
     <string name="af_apps">응용 프로그램</string>
 
     <!-- billing -->
+    <string name="af_buy_premium">프리미엄 구매하기</string>
+    <string name="af_purchase_failed_description">구매에 실패하였습니다. 죄송합니다! 귀하의 휴대 전화에 Google Play 앱이 설치되지 않았을 수 있습니다.</string>
+    <string name="af_purchase_succeed">구매 성공</string>
     <string name="af_billing_is_not_supported_on_your_device">귀하의 기기에서 청구는 지원되지 않습니다. Google Play 버전으로 업데이트하십시오.</string>
     <string name="af_purchase_fail">구매 실패</string>
 
@@ -102,5 +105,4 @@
 
     <!-- content description -->
     <string name="af_cd_open_application_menu">앱 메뉴 열기</string>
-
 </resources>

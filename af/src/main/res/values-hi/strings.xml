@@ -90,6 +90,9 @@
     <string name="af_recognition_language">अभिज्ञान भाषा</string>
 
     <!-- billing -->
+    <string name="af_buy_premium">प्रीमियम खरीदें</string>
+    <string name="af_purchase_failed_description">खरीद विफल होती है। हम उसके लिए क्षमा चाहते हैं! हो सकता है कि आपके फ़ोन पर Google Play ऐप इंस्टॉल न हो।</string>
+    <string name="af_purchase_succeed">खरीद सफल हुई</string>
     <string name="af_billing_is_not_supported_on_your_device">बिलिंग आपकी डिवाइस पर समर्थित नहीं है। कृपया Google प्ले संस्करण अपडेट करें।</string>
     <string name="af_thank_you_for_purchase">आपकी खरीदारी के लिए धन्यवाद। यदि आप हमारे ऐप में किसी समस्या का अनुभव करते हैं, तो कृपया हमसे संपर्क करें।</string>
     <string name="af_purchase_fail">खरीदारी विफल होती है</string>
