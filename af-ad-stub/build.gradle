@@ -9,16 +9,11 @@ ext {
 android {
     compileSdkVersion 28
 
-
-
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
         versionName "1.0.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -32,9 +27,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 
 //gradlew :af-ad-stub:clean :af-ad-stub:build :af-ad-stub:generateRelease
