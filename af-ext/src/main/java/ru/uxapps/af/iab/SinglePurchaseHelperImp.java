@@ -29,11 +29,6 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
             @Override
             public void onConnected(Iab iab) {
                 mIsPurchasedLive.setValue(iab.getOwnedItems().contains(itemId));
-
-                /*
-                uncomment to consume purchase
-                */
-//                iab.requestConsume(itemId);
             }
 
             @Override
@@ -41,6 +36,7 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
                 switch (result) {
                     case OK:
                         getPurchaseSuccessDialog().show(activity.getSupportFragmentManager(), null);
+                        mIsPurchasedLive.setValue(true);
                         break;
                     case ERROR:
                     case NO_NETWORK:
@@ -88,6 +84,11 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
     @Override
     public void requestPurchase() {
         mIab.requestPurchase(mActivity, mItemId);
+    }
+
+    @Override
+    public void consumePurchase() {
+        if (mIab.isConnected()) mIab.requestConsume(mItemId);
     }
 
 }
