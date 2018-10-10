@@ -21,6 +21,8 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
     private final Activity mActivity;
     private final String mItemId;
 
+    private boolean mConsumeRequested;
+
     public SinglePurchaseHelperImp(FragmentActivity activity, String publicKey, int requestCode, String itemId) {
         mActivity = activity;
         mItemId = itemId;
@@ -29,6 +31,10 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
             @Override
             public void onConnected(Iab iab) {
                 mIsPurchasedLive.setValue(iab.getOwnedItems().contains(itemId));
+                if (mConsumeRequested) {
+                    mIab.requestConsume(itemId);
+                    mConsumeRequested = false;
+                }
             }
 
             @Override
@@ -88,7 +94,7 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
 
     @Override
     public void consumePurchase() {
-        if (mIab.isConnected()) mIab.requestConsume(mItemId);
+        mConsumeRequested = true;
     }
 
 }
