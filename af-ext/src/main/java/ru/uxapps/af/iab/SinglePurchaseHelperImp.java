@@ -94,7 +94,8 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
 
     @Override
     public void consumePurchase() {
-        mConsumeRequested = true;
+        if (mIab.isConnected()) mIab.requestConsume(mItemId);
+        else mConsumeRequested = true;
     }
 
 }
