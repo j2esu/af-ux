@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
+import android.widget.Toast;
 
 public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
 
@@ -21,6 +22,8 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
     private final Activity mActivity;
     private final String mItemId;
 
+    private boolean mConsumeRequested;
+
     public SinglePurchaseHelperImp(FragmentActivity activity, String publicKey, int requestCode, String itemId) {
         mActivity = activity;
         mItemId = itemId;
@@ -29,11 +32,10 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
             @Override
             public void onConnected(Iab iab) {
                 mIsPurchasedLive.setValue(iab.getOwnedItems().contains(itemId));
-
-                /*
-                uncomment to consume purchase
-                */
-//                iab.requestConsume(itemId);
+                if (mConsumeRequested) {
+                    consume();
+                    mConsumeRequested = false;
+                }
             }
 
             @Override
@@ -41,6 +43,7 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
                 switch (result) {
                     case OK:
                         getPurchaseSuccessDialog().show(activity.getSupportFragmentManager(), null);
+                        mIsPurchasedLive.setValue(true);
                         break;
                     case ERROR:
                     case NO_NETWORK:
@@ -88,6 +91,20 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
     @Override
     public void requestPurchase() {
         mIab.requestPurchase(mActivity, mItemId);
+    }
+
+    @Override
+    public void consumePurchase() {
+        if (mIab.isConnected()) consume();
+        else mConsumeRequested = true;
+    }
+
+    private void consume() {
+        if (mIsPurchasedLive.getValue()) {
+            mIab.requestConsume(mItemId);
+            Toast.makeText(mActivity, "Purchase \"" + mItemId + "\" consumed!", Toast.LENGTH_LONG).show();
+            mActivity.finish();
+        }
     }
 
 }

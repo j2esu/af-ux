@@ -14,4 +14,6 @@ public interface SinglePurchaseHelper {
 
     void requestPurchase();
 
+    void consumePurchase();
+
 }
