@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
+import android.widget.Toast;
 
 public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
 
@@ -32,7 +33,7 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
             public void onConnected(Iab iab) {
                 mIsPurchasedLive.setValue(iab.getOwnedItems().contains(itemId));
                 if (mConsumeRequested) {
-                    mIab.requestConsume(itemId);
+                    consume();
                     mConsumeRequested = false;
                 }
             }
@@ -94,8 +95,16 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
 
     @Override
     public void consumePurchase() {
-        if (mIab.isConnected()) mIab.requestConsume(mItemId);
+        if (mIab.isConnected()) consume();
         else mConsumeRequested = true;
+    }
+
+    private void consume() {
+        if (mIsPurchasedLive.getValue()) {
+            mIab.requestConsume(mItemId);
+            Toast.makeText(mActivity, "Purchase \"" + mItemId + "\" consumed!", Toast.LENGTH_LONG).show();
+            mActivity.finish();
+        }
     }
 
 }
