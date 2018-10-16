@@ -31,7 +31,8 @@ public class SinglePurchaseHelperImp implements SinglePurchaseHelper {
         mIab = new IabImp(activity, publicKey, requestCode, new Iab.Callback.Adapter() {
             @Override
             public void onConnected(Iab iab) {
-                mIsPurchasedLive.setValue(iab.getOwnedItems().contains(itemId));
+                if (iab.getOwnedItems() != null) mIsPurchasedLive.setValue(iab.getOwnedItems().contains(itemId));
+                else mIsPurchasedLive.setValue(true); // In case of iab error and passing to getOwnedItems() null - prevent pro users to get free-user apps behaviour
                 if (mConsumeRequested) {
                     consume();
                     mConsumeRequested = false;
