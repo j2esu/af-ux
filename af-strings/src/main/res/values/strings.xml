@@ -1,0 +1,113 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- no translate -->
+    <string name="ux_apps_support_email" translatable="false">support@uxapps.ru</string>
+    <string name="af_empty_string" translatable="false"/>
+
+    <!-- common (from sources) -->
+    <string name="af_no_apps_found">Could not find an appropriate application</string>
+    <string name="af_action_cant_be_undo">This action cannot be undone</string>
+    <string name="af_close">Close</string>
+    <string name="af_delete">Delete</string>
+    <string name="af_download">Download</string>
+    <string name="af_notifications">Notifications</string>
+    <string name="af_reply">Reply</string>
+    <string name="af_send">Send</string>
+    <string name="af_send_feedback">Send feedback</string>
+    <string name="af_settings">Settings</string>
+    <string name="af_share">Share</string>
+    <string name="af_silent_ringtone">Silent</string>
+    <string name="af_sound_signal">Sound</string>
+    <string name="af_welcome">Welcome</string>
+    <plurals name="af_days_relative_future">
+        <item quantity="one">in <xliff:g example="1" id="count">%d</xliff:g> day</item>
+        <item quantity="other">in <xliff:g example="2" id="count">%d</xliff:g> days</item>
+    </plurals>
+    <string name="af_not_now">Not now</string>
+    <string name="af_remember">Remember</string>
+    <string name="af_never">Never</string>
+    <string name="af_text_copied">Text copied to clipboard</string>
+    <string name="af_allow">Allow</string>
+    <string name="af_no_matches">No matches</string>
+    <string name="af_app_info">App info</string>
+    <string name="af_vibrate_title">Vibrate</string>
+    <string name="af_try_again_later">Try again later</string>
+    <string name="af_ad">Ad</string>
+    <string name="af_dont_show_again">Don\'t show again</string>
+    <string name="af_no_thanks">No, thanks</string>
+    <string name="af_share_our_app">Share our app</string>
+    <string name="af_free">Free</string>
+    <string name="af_title">Title</string>
+
+    <string name="af_removed">Removed</string>
+    <string name="af_clear">Clear</string>
+    <string name="af_undo">Undo</string>
+    <string name="af_edit">Edit</string>
+    <string name="af_rate">Rate</string>
+    <string name="af_install">Install</string>
+    <string name="af_open">Open</string>
+    <string name="af_use">Use</string>
+    <string name="af_hide">Hide</string>
+    <string name="af_by_default">Default</string>
+    <string name="af_customize">Customize</string>
+    <string name="af_add">Add</string>
+    <string name="af_set_as_default">Set as default</string>
+    <string name="af_change">Change</string>
+    <string name="af_recent_items_title">Recent</string>
+    <string name="af_other">Other</string>
+    <string name="af_contact_us">Contact us</string>
+    <string name="af_apps">Apps</string>
+    <string name="af_contacts">Contacts</string>
+    <string name="af_no_contacts_found">No contacts found</string>
+    <string name="af_retry">Retry</string>
+    <string name="af_yes">Yes</string>
+    <string name="af_no">No</string>
+    <string name="af_reset">Reset</string>
+    <string name="af_disable">Disable</string>
+    <string name="af_menu">Menu</string>
+    <string name="af_privacy_policy">Privacy policy</string>
+    <string name="af_apply">Apply</string>
+    <string name="af_accounts">Accounts</string>
+    <string name="af_remove_ad">Remove ad</string>
+    <string name="af_tip">Tip</string>
+    <string name="af_restore">Restore</string>
+    <string name="af_error">Error</string>
+
+    <string name="af_theme">Theme</string>
+    <string name="af_deleted">Deleted</string>
+    <string name="af_restored">Restored</string>
+    <string name="af_ad_will_appear_after_trial">Ad will appear here after trial period ends</string>
+    <string name="af_you_can_do_it_later_in_settings">You can do it later in settings</string>
+    <string name="af_theme_light">Light</string>
+    <string name="af_theme_dark">Dark</string>
+    <string name="af_appearance_prefs_title">Appearance</string>
+    <string name="af_primary_color">Primary color</string>
+    <string name="af_secondary_color">Secondary color</string>
+
+    <!-- voice input -->
+    <string name="af_voice_input">Voice input</string>
+    <string name="af_voice_input_prompt">Speak now</string>
+    <string name="af_show_recognition_vars">Show recognition variants</string>
+    <string name="af_no_app_to_recognize_voice">No app to recognize voice</string>
+    <string name="af_recognition_language">Recognition language</string>
+
+    <!-- billing -->
+    <string name="af_buy_premium">Buy Premium</string>
+    <string name="af_billing_is_not_supported_on_your_device">Billing is not supported on your device. Please update Google Play version.</string>
+    <string name="af_thank_you_for_purchase">Thank you for your purchase! Please contact us if you have any problems with our app.</string>
+    <string name="af_purchase_fail">Purchase fails</string>
+    <string name="af_purchase_succeed">Purchase succeed</string>
+    <string name="af_purchase_failed_description">Purchase failed. We are sorry about that! You may not have the Google Play app installed on your phone.</string>
+
+    <!-- rate -->
+    <string name="af_rate_prompt">Like this app?<xliff:g>\n</xliff:g>Rate on Google Play!</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">Open application menu</string>
+
+    <string name="af_cant_get_rec_lang_list">Can\'t get available languages</string>
+    <string name="af_use_std_recognition_app">Use standard voice recognition app</string>
+    <string name="af_network_error">Network error. Check internet connection</string>
+    <string name="af_restore_defaults">Restore defaults</string>
+    <string name="af_want_more_features">Want more features?</string>
+    <string name="af_new_app_already_available">Our new app <xliff:g id="app_name">%s</xliff:g> is already available on Google Play!</string>
+</resources>

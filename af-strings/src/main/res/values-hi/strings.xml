@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="af_vibrate_title">"वाइब्रेट"</string>
+    <string name="af_no_apps_found">"उपयुक्त ऐप्लिकेशन नहीं मिला"</string>
+    <string name="af_action_cant_be_undo">"इस क्रिया को पूर्ववत नहीं किया जा सकता."</string>
+    <string name="af_close">"बंद करें"</string>
+    <string name="af_delete">"हटाएं"</string>
+    <string name="af_download">"डाउनलोड करें"</string>
+    <string name="af_notifications">"नोटिफिकेशन"</string>
+    <string name="af_reply">"उत्तर दें"</string>
+    <string name="af_send">"भेजें"</string>
+    <string name="af_send_feedback">"फ़ीडबैक भेजें"</string>
+    <string name="af_settings">"सेटिंग"</string>
+    <string name="af_share">"साझा करें"</string>
+    <string name="af_silent_ringtone">"मौन"</string>
+    <string name="af_sound_signal">"ध्वनि"</string>
+    <string name="af_welcome">"स्वागत है"</string>
+    <plurals name="af_days_relative_future" formatted="false">
+        <item quantity="one"><xliff:g id="COUNT_1">%d</xliff:g> दिनों में</item>
+        <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> दिनों में</item>
+    </plurals>
+    <string name="af_not_now">"अभी नहीं"</string>
+    <string name="af_remember">"याद रखें"</string>
+    <string name="af_never">"कभी नहीं"</string>
+    <string name="af_text_copied">"लेख को क्‍लिपबोर्ड पर कॉपी किया गया"</string>
+    <string name="af_allow">"अनुमति दें"</string>
+    <string name="af_no_matches">"कोई मिलान नहीं"</string>
+    <string name="af_app_info">"ऐप की जानकारी"</string>
+
+    <string name="af_removed">हटाया गया</string>
+    <string name="af_clear">साफ़ करें</string>
+    <string name="af_undo">पूर्ववत करें</string>
+    <string name="af_edit">संपादित करें</string>
+    <string name="af_rate">रेट करें</string>
+    <string name="af_install">स्थापित करें</string>
+    <string name="af_open">खोलें</string>
+    <string name="af_use">इस्तेमाल करें</string>
+    <string name="af_hide">छुपाएं</string>
+    <string name="af_by_default">डिफ़ॉल्ट</string>
+    <string name="af_customize">अनुकूलित करें</string>
+    <string name="af_add">जोड़ें</string>
+    <string name="af_set_as_default">डिफ़ॉल्ट के रूप में सेट करें</string>
+    <string name="af_change">बदलें</string>
+    <string name="af_recent_items_title">हालिया</string>
+    <string name="af_other">अन्य</string>
+    <string name="af_contact_us">हमसे संपर्क करें</string>
+    <string name="af_apps">ऐप्स</string>
+    <string name="af_contacts">संपर्क</string>
+    <string name="af_no_contacts_found">कोई संपर्क नहीं मिला</string>
+    <string name="af_retry">पुन: प्रयास करें</string>
+    <string name="af_yes">हां</string>
+    <string name="af_no">नहीं</string>
+    <string name="af_reset">रीसेट करें</string>
+    <string name="af_disable">अक्षम करें</string>
+    <string name="af_menu">मेनू</string>
+    <string name="af_privacy_policy">गोपनीयता नीति</string>
+    <string name="af_apply">लागू करें</string>
+    <string name="af_accounts">खाते</string>
+    <string name="af_tip">टिप</string>
+    <string name="af_restore">पुनर्स्थापित करें</string>
+    <string name="af_error">त्रुटी</string>
+    <string name="af_deleted">हटाया गया</string>
+    <string name="af_restored">पुनर्स्थापित किया गया</string>
+    <string name="af_you_can_do_it_later_in_settings">आप इसे सेटिंग में बाद में कर सकते हैं</string>
+    <string name="af_try_again_later">बाद में दोबारा प्रयास करें</string>
+    <string name="af_ad">विज्ञापन</string>
+    <string name="af_dont_show_again">दोबारा न दिखाएं</string>
+    <string name="af_no_thanks">जी नहीं, धन्यवाद</string>
+    <string name="af_share_our_app">हमारा ऐप साझा करें</string>
+    <string name="af_free">नि: शुल्क</string>
+    <string name="af_title">शीर्षक</string>
+
+    <!-- advertisement -->
+    <string name="af_remove_ad">विज्ञापन निकालें</string>
+    <string name="af_ad_will_appear_after_trial">परीक्षण अवधि समाप्त होने के बाद विज्ञापन यहां दिखाई देगा</string>
+
+    <!-- appearance settings -->
+    <string name="af_appearance_prefs_title">प्रकटन</string>
+    <string name="af_theme">थीम</string>
+    <string name="af_theme_light">हल्का</string>
+    <string name="af_theme_dark">गहरा</string>
+    <string name="af_primary_color">प्राथमिक रंग</string>
+    <string name="af_secondary_color">द्वितीयक रंग</string>
+
+    <!-- voice input -->
+    <string name="af_voice_input">आवाज़ इनपुट</string>
+    <string name="af_voice_input_prompt">अब बोलें</string>
+    <string name="af_show_recognition_vars">पहचान भिन्न दिखाएं</string>
+    <string name="af_no_app_to_recognize_voice">आवाज़ पहचानने के लिय कोई ऐप नहीं है</string>
+    <string name="af_recognition_language">अभिज्ञान भाषा</string>
+
+    <!-- billing -->
+    <string name="af_buy_premium">प्रीमियम खरीदें</string>
+    <string name="af_purchase_failed_description">खरीद विफल होती है। हम उसके लिए क्षमा चाहते हैं! हो सकता है कि आपके फ़ोन पर Google Play ऐप इंस्टॉल न हो।</string>
+    <string name="af_purchase_succeed">खरीद सफल हुई</string>
+    <string name="af_billing_is_not_supported_on_your_device">बिलिंग आपकी डिवाइस पर समर्थित नहीं है। कृपया Google प्ले संस्करण अपडेट करें।</string>
+    <string name="af_thank_you_for_purchase">आपकी खरीदारी के लिए धन्यवाद। यदि आप हमारे ऐप में किसी समस्या का अनुभव करते हैं, तो कृपया हमसे संपर्क करें।</string>
+    <string name="af_purchase_fail">खरीदारी विफल होती है</string>
+
+    <!-- rate -->
+    <string name="af_rate_prompt">इस ऐप को लाइक करें? <xliff:g>\n</xliff:g> Google प्ले पर रेट करें!</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">एप्लिकेशन मेनू खोलें</string>
+
+    <string name="af_cant_get_rec_lang_list">उपलब्ध भाषाएं नहीं मिल सकतीं</string>
+    <string name="af_network_error">नेटवर्क त्रुटी। इंटरनेट कनेक्शन की जांच करें</string>
+    <string name="af_new_app_already_available">हमारा नया ऐप <xliff:g id="app_name">%s</xliff:g> पहले से ही Google प्ले पर उपलब्ध है!</string>
+    <string name="af_restore_defaults">डिफ़ॉल्ट पुनर्स्थापित करें</string>
+    <string name="af_use_std_recognition_app">मानक आवाज़ पहचान ऐप इस्तेमाल करें</string>
+    <string name="af_want_more_features">और अधिक सुविधाएं चाहते हैं?</string>
+</resources>

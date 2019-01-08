@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="af_vibrate_title">"Vibrieren"</string>
+    <string name="af_no_apps_found">"Keine geeignete App gefunden"</string>
+
+    <string name="af_action_cant_be_undo">"Diese Aktion kann nicht rückgängig gemacht werden."</string>
+    <string name="af_close">"Schließen"</string>
+    <string name="af_delete">"Löschen"</string>
+    <string name="af_download">"Herunterladen"</string>
+    <string name="af_notifications">"Benachrichtigungen"</string>
+    <string name="af_reply">"Antworten"</string>
+    <string name="af_send">"Senden"</string>
+    <string name="af_send_feedback">"Feedback geben"</string>
+    <string name="af_settings">"Einstellungen"</string>
+    <string name="af_share">"Teilen"</string>
+    <string name="af_silent_ringtone">"Lautlos"</string>
+    <string name="af_sound_signal">"Ton"</string>
+    <string name="af_welcome">"Willkommen"</string>
+
+    <plurals name="af_days_relative_future">
+        <item quantity="other">in <xliff:g id="COUNT_1">%d</xliff:g> Tagen</item>
+        <item quantity="one">in <xliff:g id="COUNT_0">%d</xliff:g> Tag</item>
+    </plurals>
+    <string name="af_not_now">"Nicht jetzt"</string>
+    <string name="af_remember">"Speichern"</string>
+    <string name="af_never">"Nie"</string>
+    <string name="af_text_copied">"Text in Zwischenablage kopiert"</string>
+    <string name="af_allow">"Zulassen"</string>
+    <string name="af_no_matches">"Keine Treffer"</string>
+    <string name="af_app_info">"App-Informationen"</string>
+    <string name="af_try_again_later">Versuche es später noch einmal</string>
+    <string name="af_ad">Anzeige</string>
+    <string name="af_dont_show_again">Nicht mehr anzeigen</string>
+    <string name="af_no_thanks">Nein danke</string>
+    <string name="af_share_our_app">App teilen</string>
+    <string name="af_free">Kostenlos</string>
+    <string name="af_title">Titel</string>
+
+    <!-- appearance -->
+    <string name="af_theme">Design</string>
+    <string name="af_deleted">Gelöscht</string>
+    <string name="af_restored">Wiederhergestellt</string>
+    <string name="af_ad_will_appear_after_trial">Nach dem Ende des Testzeitraum werden hier wieder Anzeigen erscheinen</string>
+    <string name="af_you_can_do_it_later_in_settings">Sie können dies in den Einstellungen später erledigen</string>
+    <string name="af_theme_light">Hell</string>
+    <string name="af_theme_dark">Dunkel</string>
+    <string name="af_appearance_prefs_title">Erscheinungsbild</string>
+    <string name="af_primary_color">Hauptfarbe</string>
+    <string name="af_secondary_color">Zweitfarbe</string>
+
+    <!-- voice input -->
+    <string name="af_voice_input">Spracheingabe</string>
+    <string name="af_voice_input_prompt">Sprechen Sie bitte jetzt</string>
+    <string name="af_show_recognition_vars">Stimmerkennungs-Varianten anzeigen</string>
+    <string name="af_no_app_to_recognize_voice">Keine App zur Stimmerkennung vorhanden</string>
+    <string name="af_recognition_language">Stimmerkennungssprache</string>
+
+    <!-- billing -->
+    <string name="af_buy_premium">Premium kaufen</string>
+    <string name="af_purchase_failed_description">Der Kauf ist fehlgeschlagen. Das tut uns Leid! Möglicherweise ist die Google-Play-Anwendung nicht auf Ihrem Handy installiert.</string>
+    <string name="af_purchase_succeed">Der Kauf war erfolgreich</string>
+    <string name="af_billing_is_not_supported_on_your_device">Abrechnungen werden von Ihrem Gerät nicht unterstützt. Bitte aktualisieren Sie die Google-Play-Version.</string>
+    <string name="af_thank_you_for_purchase">Vielen Dank für Ihren Einkauf! Bitte kontaktieren Sie uns, wenn Sie auf irgendwelche Schwierigkeiten bei unserer App stoßen sollten.</string>
+    <string name="af_purchase_fail">Kauf fehlgeschlagen</string>
+
+    <!-- rate -->
+    <string name="af_rate_prompt">Ihnen gefällt diese App?<xliff:g>\n</xliff:g>Bewerten Sie uns bei Google Play!</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">Anwendungsmenü öffnen</string>
+
+    <string name="af_accounts">Konten</string>
+    <string name="af_add">Hinzufügen</string>
+    <string name="af_apply">Anwenden</string>
+    <string name="af_apps">Anwendungen</string>
+    <string name="af_by_default">Standard</string>
+    <string name="af_change">Ändern</string>
+    <string name="af_clear">Zu löschen</string>
+    <string name="af_contact_us">Feedback</string>
+    <string name="af_contacts">Kontakte</string>
+    <string name="af_customize">Anpassen</string>
+    <string name="af_disable">Deaktivieren</string>
+    <string name="af_edit">Bearbeiten</string>
+    <string name="af_error">Fehler</string>
+    <string name="af_hide">Verstecken</string>
+    <string name="af_install">Installieren</string>
+    <string name="af_menu">Menü</string>
+    <string name="af_no">Nein</string>
+    <string name="af_no_contacts_found">Keine Kontakte gefunden</string>
+    <string name="af_open">Öffnen</string>
+    <string name="af_other">Andere</string>
+    <string name="af_privacy_policy">Datenschutzrichtlinie</string>
+    <string name="af_rate">Bewerten</string>
+    <string name="af_recent_items_title">Kürzlich</string>
+    <string name="af_remove_ad">Werbung entfernen</string>
+    <string name="af_removed">Gelöscht</string>
+    <string name="af_reset">Zurücksetzen</string>
+    <string name="af_restore">Wiederherstellen</string>
+    <string name="af_retry">Wiederholen</string>
+    <string name="af_set_as_default">Als Standard einstellen</string>
+    <string name="af_tip">Hinweis</string>
+    <string name="af_undo">Rückgängig machen</string>
+    <string name="af_use">Benutzen</string>
+    <string name="af_yes">Ja</string>
+
+    <string name="af_cant_get_rec_lang_list">Kann die verfügbaren Sprachen nicht abrufen</string>
+    <string name="af_network_error">Netzwerkfehler. Überprüfen Sie die Internetverbindung</string>
+    <string name="af_new_app_already_available">Unsere neue App <xliff:g id="app_name">%s</xliff:g> ist bereits auf Google Play erhältlich!</string>
+    <string name="af_restore_defaults">Standardeinstellungen wiederherstellen</string>
+    <string name="af_use_std_recognition_app">Verwenden Sie die Standard-Spracherkennungs-App</string>
+    <string name="af_want_more_features">Möchten Sie weitere Funktionen?</string>
+</resources>

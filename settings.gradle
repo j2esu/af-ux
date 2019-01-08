@@ -1,1 +1,1 @@
-include ':demo', ':af', ':af-live', ':af-rv', ':af-iab', ':af-ad', ':af-ad-stub', ':af-base', ':af-ext'
+include ':demo', ':af', ':af-live', ':af-rv', ':af-iab', ':af-ad', ':af-ad-stub', ':af-base', ':af-ext', ':af-strings'

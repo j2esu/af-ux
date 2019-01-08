@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="af_vibrate_title">"バイブレーション"</string>
+    <string name="af_no_apps_found">"適切なアプリが見つかりませんでした"</string>
+    <string name="af_action_cant_be_undo">"この操作は元に戻せません。"</string>
+    <string name="af_close">"閉じる"</string>
+    <string name="af_delete">"削除"</string>
+    <string name="af_download">"ダウンロード"</string>
+    <string name="af_notifications">"通知"</string>
+    <string name="af_reply">"返信"</string>
+    <string name="af_send">"送信"</string>
+    <string name="af_send_feedback">"フィードバックを送信"</string>
+    <string name="af_settings">"設定"</string>
+    <string name="af_share">"共有"</string>
+    <string name="af_silent_ringtone">"マナーモード"</string>
+    <string name="af_sound_signal">"通知音"</string>
+    <string name="af_welcome">"ようこそ"</string>
+    <plurals name="af_days_relative_future" formatted="false">
+        <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> 日後</item>
+    </plurals>
+    <string name="af_not_now">"今は保存しない"</string>
+    <string name="af_remember">"保存"</string>
+    <string name="af_never">"保存しない"</string>
+    <string name="af_text_copied">"テキストをクリップボードにコピーしました。"</string>
+    <string name="af_allow">"許可"</string>
+    <string name="af_no_matches">"該当なし"</string>
+    <string name="af_app_info">"アプリ情報"</string>
+
+    <string name="af_removed">削除されました</string>
+    <string name="af_clear">消去する</string>
+    <string name="af_undo">元に戻す</string>
+    <string name="af_edit">編集する</string>
+    <string name="af_rate">評価する</string>
+    <string name="af_install">インストールする</string>
+    <string name="af_open">開く</string>
+    <string name="af_use">使用する</string>
+    <string name="af_hide">非表示にする</string>
+    <string name="af_by_default">デフォルト</string>
+    <string name="af_customize">カスタマイズ</string>
+    <string name="af_add">追加する</string>
+    <string name="af_set_as_default">デフォルトとして設定する</string>
+    <string name="af_change">変更する</string>
+    <string name="af_recent_items_title">最近</string>
+    <string name="af_other">その他</string>
+    <string name="af_contact_us">お問い合わせ先</string>
+    <string name="af_apps">アプリ</string>
+    <string name="af_contacts">連絡先</string>
+    <string name="af_no_contacts_found">連絡先が見つかりません</string>
+    <string name="af_retry">やり直す</string>
+    <string name="af_yes">はい</string>
+    <string name="af_no">いいえ</string>
+    <string name="af_reset">リセットする</string>
+    <string name="af_disable">無効にする</string>
+    <string name="af_menu">メニュー</string>
+    <string name="af_privacy_policy">個人情報保護方針</string>
+    <string name="af_apply">適用する</string>
+    <string name="af_accounts">アカウント</string>
+    <string name="af_tip">ヒント</string>
+    <string name="af_restore">リストアする</string>
+    <string name="af_error">エラー</string>
+    <string name="af_deleted">削除されました</string>
+    <string name="af_restored">復元する</string>
+    <string name="af_you_can_do_it_later_in_settings">後ほど設定から変更できます</string>
+    <string name="af_try_again_later">後で再度お試しください</string>
+    <string name="af_ad">広告</string>
+    <string name="af_dont_show_again">非表示にする</string>
+    <string name="af_no_thanks">いいえ、結構です</string>
+    <string name="af_share_our_app">アプリを共有</string>
+    <string name="af_free">無料</string>
+    <string name="af_title">肩書き</string>
+
+    <!-- advertisement -->
+    <string name="af_remove_ad">広告を削除する</string>
+    <string name="af_ad_will_appear_after_trial">お試し期間が終了すると、ここに広告が表示されます</string>
+
+    <!-- appearance settings -->
+    <string name="af_appearance_prefs_title">デザイン</string>
+    <string name="af_theme">テーマ</string>
+    <string name="af_theme_light">明い</string>
+    <string name="af_theme_dark">暗い</string>
+    <string name="af_primary_color">メインカラー</string>
+    <string name="af_secondary_color">サイドカラー</string>
+
+    <!-- voice input -->
+    <string name="af_voice_input">音声入力</string>
+    <string name="af_voice_input_prompt">今すぐ話す</string>
+    <string name="af_show_recognition_vars">認識するバリエーションを表示する</string>
+    <string name="af_no_app_to_recognize_voice">音声を認識するアプリがありません</string>
+    <string name="af_recognition_language">認識する言語</string>
+
+    <!-- billing -->
+    <string name="af_buy_premium">プレミアムを購入</string>
+    <string name="af_purchase_failed_description">購入は失敗です。申し訳ありませんが、あなたの携帯電話にはGoogle play アプリケーションがインストールされていない可能性があります。</string>
+    <string name="af_purchase_succeed">購入成功</string>
+    <string name="af_billing_is_not_supported_on_your_device">お使いのデバイスでは課金がサポートされていません。Google Playでバージョンのアップデートを行なってください。</string>
+    <string name="af_thank_you_for_purchase">ご購入いただきありがとうございます！アプリに何らかの問題が生じた場合は、ご遠慮なく当方へお問い合わせくださいませ。</string>
+    <string name="af_purchase_fail">購入に失敗</string>
+
+    <!-- rate -->
+    <string name="af_rate_prompt">アプリは気に入っていただけましたか？ <xliff:g>\n</xliff:g> Google Playで評価をお願いいたします！</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">アプリケーションのメニューを開く</string>
+
+    <string name="af_cant_get_rec_lang_list">利用可能な言語を取得できませんでした</string>
+    <string name="af_network_error">ネットワークエラー。インターネットに接続されているかご確認ください</string>
+    <string name="af_new_app_already_available"><xliff:g id="app_name">%s</xliff:g> で、当社の新しいアプリをご利用いただけます！</string>
+    <string name="af_restore_defaults">デフォルトに戻す</string>
+    <string name="af_use_std_recognition_app">標準の音声認識アプリを使用する</string>
+    <string name="af_want_more_features">より多くの機能を利用しますか？</string>
+</resources>

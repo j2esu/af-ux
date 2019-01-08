@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="af_accounts">계정</string>
+    <string name="af_action_cant_be_undo">"이 작업은 취소할 수 없습니다."</string>
+    <string name="af_ad_will_appear_after_trial">시험기간 종료 후 광고가 여기 표시됩니다.</string>
+    <string name="af_add">추가하려면</string>
+    <string name="af_allow">"허용"</string>
+    <string name="af_app_info">"앱 정보"</string>
+    <string name="af_appearance_prefs_title">외관</string>
+    <string name="af_apply">신청하기</string>
+    <string name="af_apps">응용 프로그램</string>
+
+    <!-- billing -->
+    <string name="af_buy_premium">프리미엄 구매하기</string>
+    <string name="af_purchase_failed_description">구매에 실패하였습니다. 죄송합니다! 귀하의 휴대 전화에 Google Play 앱이 설치되지 않았을 수 있습니다.</string>
+    <string name="af_purchase_succeed">구매 성공</string>
+    <string name="af_billing_is_not_supported_on_your_device">귀하의 기기에서 청구는 지원되지 않습니다. Google Play 버전으로 업데이트하십시오.</string>
+    <string name="af_purchase_fail">구매 실패</string>
+
+    <string name="af_by_default">디폴트값</string>
+    <string name="af_cant_get_rec_lang_list">사용 가능한 언어를 가져올 수 없습니다.</string>
+    <string name="af_change">바꾸다</string>
+    <string name="af_clear">지우려면</string>
+    <string name="af_close">"닫기"</string>
+    <string name="af_contact_us">우리와 함께 문의</string>
+    <string name="af_contacts">접촉</string>
+    <string name="af_customize">사용자 정의</string>
+    <plurals name="af_days_relative_future">
+        <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g>일 후</item>
+    </plurals>
+    <string name="af_delete">"삭제"</string>
+    <string name="af_deleted">삭제됨</string>
+    <string name="af_disable">해제하십시오</string>
+    <string name="af_download">"다운로드"</string>
+    <string name="af_edit">편집하려면</string>
+    <string name="af_error">오류</string>
+    <string name="af_hide">숨기기</string>
+    <string name="af_install">설치</string>
+    <string name="af_menu">메뉴</string>
+    <string name="af_network_error">네트워크 오류. 인터넷 연결 확인</string>
+    <string name="af_never">"안함"</string>
+    <string name="af_new_app_already_available">새로운 앱 <xliff:g id="app_name">%s</xliff:g> 을(를) Google Play에서 이용하실 수 있습니다!</string>
+    <string name="af_no">아니</string>
+    <string name="af_no_app_to_recognize_voice">음성을 인식하는 앱이 없습니다.</string>
+    <string name="af_no_apps_found">"관련 애플리케이션을 찾을 수 없습니다."</string>
+    <string name="af_no_contacts_found">연락을 찾을 수 없습니다</string>
+    <string name="af_no_matches">"검색결과 없음"</string>
+    <string name="af_not_now">"나중에"</string>
+    <string name="af_notifications">"알림"</string>
+    <string name="af_open">열기 위해</string>
+    <string name="af_other">또 다른</string>
+    <string name="af_primary_color">기본 색</string>
+    <string name="af_privacy_policy">개인 정보 정책</string>
+    <string name="af_rate">평가하기</string>
+
+    <!-- rate -->
+    <string name="af_rate_prompt">이 앱이 마음에 드십니까? Google Play에서 평가해 주십시오!</string>
+    <string name="af_recent_items_title">최근의</string>
+    <string name="af_recognition_language">인식 언어</string>
+    <string name="af_remember">"저장"</string>
+    <string name="af_remove_ad">광고를 제거합니다</string>
+    <string name="af_removed">그것은 제거한</string>
+    <string name="af_reply">"답장"</string>
+    <string name="af_reset">재설정합니다</string>
+    <string name="af_restore">복원</string>
+    <string name="af_restore_defaults">기본값으로 복원</string>
+    <string name="af_restored">복원됨</string>
+    <string name="af_retry">다시 해 보다</string>
+    <string name="af_secondary_color">보조 색</string>
+    <string name="af_send">"전송"</string>
+    <string name="af_send_feedback">"의견 보내기"</string>
+    <string name="af_set_as_default">기본값으로 설정합니다</string>
+    <string name="af_settings">"설정"</string>
+    <string name="af_share">"공유"</string>
+    <string name="af_show_recognition_vars">인식 변형 보기</string>
+    <string name="af_silent_ringtone">"무음"</string>
+    <string name="af_sound_signal">"소리"</string>
+    <string name="af_text_copied">"텍스트가 클립보드에 복사되었습니다"</string>
+    <string name="af_thank_you_for_purchase">구매해 주셔서 감사합니다! 저희 앱에 문제가 있으시면 연락해 주십시오.</string>
+    <string name="af_try_again_later">나중에 다시 시도하세요</string>
+    <string name="af_ad">광고</string>
+    <string name="af_dont_show_again">다시 보지 않기</string>
+    <string name="af_no_thanks">아뇨, 괜찮습니다</string>
+    <string name="af_share_our_app">앱 공유하기</string>
+    <string name="af_free">무료</string>
+    <string name="af_title">직위</string>
+
+    <!-- appearance -->
+    <string name="af_theme">테마</string>
+    <string name="af_theme_dark">어두움</string>
+    <string name="af_theme_light">밝음</string>
+    <string name="af_tip">힌트</string>
+    <string name="af_undo">취소하려면</string>
+    <string name="af_use">사용</string>
+    <string name="af_use_std_recognition_app">표준 음성 인식 앱 사용</string>
+    <string name="af_vibrate_title">"진동"</string>
+
+    <!-- voice input -->
+    <string name="af_voice_input">음성 입력</string>
+    <string name="af_voice_input_prompt">지금 말하세요</string>
+    <string name="af_want_more_features">더 많은 기능을 원하십니까?</string>
+    <string name="af_welcome">"환영합니다."</string>
+    <string name="af_yes">예</string>
+    <string name="af_you_can_do_it_later_in_settings">설정에서 나중에 할 수 있습니다.</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">앱 메뉴 열기</string>
+</resources>

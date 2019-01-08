@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="af_vibrate_title">"اهتزاز"</string>
+    <string name="af_no_apps_found">"تعذر العثور على تطبيق مناسب"</string>
+
+    <string name="af_action_cant_be_undo">"لا يمكن التراجع عن هذا الإجراء."</string>
+    <string name="af_close">"إغلاق"</string>
+    <string name="af_delete">"حذف"</string>
+    <string name="af_download">"تنزيل"</string>
+    <string name="af_notifications">"الإشعارات"</string>
+    <string name="af_reply">"الرد"</string>
+    <string name="af_send">"إرسال"</string>
+    <string name="af_send_feedback">"إرسال تعليقات"</string>
+    <string name="af_settings">"الإعدادات"</string>
+    <string name="af_share">"المشاركة"</string>
+    <string name="af_silent_ringtone">"صامت"</string>
+    <string name="af_sound_signal">"الصوت"</string>
+    <string name="af_welcome">"مرحبًا"</string>
+
+    <plurals name="af_days_relative_future">
+        <item quantity="zero">خلال <xliff:g id="COUNT_1">%d</xliff:g> يوم</item>
+        <item quantity="two">خلال يومين (<xliff:g id="COUNT_1">%d</xliff:g>)</item>
+        <item quantity="few">خلال <xliff:g id="COUNT_1">%d</xliff:g> أيام</item>
+        <item quantity="many">خلال <xliff:g id="COUNT_1">%d</xliff:g> يومًا</item>
+        <item quantity="other">خلال <xliff:g id="COUNT_1">%d</xliff:g> يوم</item>
+        <item quantity="one">خلال <xliff:g id="COUNT_0">%d</xliff:g> يوم</item>
+    </plurals>
+    <string name="af_not_now">"ليس الآن"</string>
+    <string name="af_remember">"تذكّر"</string>
+    <string name="af_never">"مطلقًا"</string>
+    <string name="af_text_copied">"تم نسخ النص إلى الحافظة"</string>
+    <string name="af_allow">"السماح"</string>
+    <string name="af_no_matches">"ليس هناك أية مطابقات"</string>
+    <string name="af_app_info">"معلومات عن التطبيق"</string>
+    <string name="af_try_again_later">محاولة مرة أخرى لاحقًا</string>
+    <string name="af_ad">الإعلانات</string>
+    <string name="af_dont_show_again">عدم العرض مرة أخرى</string>
+    <string name="af_no_thanks">لا، شكرًا</string>
+    <string name="af_share_our_app">مشاركة التطبيق</string>
+    <string name="af_free">مجانا</string>
+    <string name="af_title">لقب</string>
+
+    <!-- appearance -->
+    <string name="af_theme">السمة</string>
+    <string name="af_deleted">تم الحذف</string>
+    <string name="af_restored">تمت الاستعادة</string>
+    <string name="af_ad_will_appear_after_trial">سوف يظهر الإعلان هنا عقب انتهاء الفترة التجريبية</string>
+    <string name="af_you_can_do_it_later_in_settings">يمكنك القيام بذلك في وقت لاحق من الإعدادات</string>
+    <string name="af_theme_light">فاتح</string>
+    <string name="af_theme_dark">داكن</string>
+    <string name="af_appearance_prefs_title">المظهر</string>
+    <string name="af_primary_color">اللون الأساسي</string>
+    <string name="af_secondary_color">اللون الثانوي</string>
+
+    <!-- voice input -->
+    <string name="af_voice_input">مدخل  الصوت</string>
+    <string name="af_voice_input_prompt">تحدث الآن</string>
+    <string name="af_show_recognition_vars">عرض متغيرات التعرف</string>
+    <string name="af_no_app_to_recognize_voice">لا يوجد تطبيق للتعرف على الصوت</string>
+    <string name="af_recognition_language">التعرف على اللغة</string>
+
+    <!-- billing -->
+    <string name="af_buy_premium">شراء الإصدار المميّز</string>
+    <string name="af_purchase_failed_description">فشلت عملية الشراء. نأسف لحدوث ذلك! قد يكون تطبيق Google Play غير مثبّت على هاتفك.</string>
+    <string name="af_purchase_succeed">نجحت عملية الشراء</string>
+    <string name="af_billing_is_not_supported_on_your_device">الفواتير غير مدعومة على جهازك. يرجى تحديث إصدار جوجل بلاي.</string>
+    <string name="af_thank_you_for_purchase">شكرا على الشراء! يرجى الاتصال بنا إذا كان لديك أي مشاكل مع التطبيق.</string>
+    <string name="af_purchase_fail">فشل الشراء</string>
+
+    <!-- rate -->
+    <string name="af_rate_prompt">هل تحب هذا التطبيق؟ قيمنا على جوجل بلاي!</string>
+
+    <!-- content description -->
+    <string name="af_cd_open_application_menu">فتح قائمة التطبيق</string>
+
+    <string name="af_accounts">حسابات</string>
+    <string name="af_add">إضافة</string>
+    <string name="af_apply">تطبق</string>
+    <string name="af_apps">التطبيقات</string>
+    <string name="af_by_default">الإعدادات الافتراضية</string>
+    <string name="af_change">لتغيير</string>
+    <string name="af_clear">نظيف</string>
+    <string name="af_contact_us">اتصل بنا</string>
+    <string name="af_contacts">جهات الاتصال</string>
+    <string name="af_customize">يعدل أو يكيف</string>
+    <string name="af_disable">تعطيل</string>
+    <string name="af_edit">تصحيح</string>
+    <string name="af_error">خطأ</string>
+    <string name="af_hide">إخفاء</string>
+    <string name="af_install">تثبيت</string>
+    <string name="af_menu">قائمة طعام</string>
+    <string name="af_no">لا</string>
+    <string name="af_no_contacts_found">لم يتم العثور على جهات اتصال</string>
+    <string name="af_open">لفتح</string>
+    <string name="af_other">أخرى</string>
+    <string name="af_privacy_policy">سياسة الخصوصية</string>
+    <string name="af_rate">تقييم</string>
+    <string name="af_recent_items_title">الاخير</string>
+    <string name="af_remove_ad">إزالة الإعلانات</string>
+    <string name="af_removed">تمت إزالته</string>
+    <string name="af_reset">إعادة تعيين</string>
+    <string name="af_restore">استعادة</string>
+    <string name="af_retry">إعادة المحاولة</string>
+    <string name="af_set_as_default">تعيين كافتراضي</string>
+    <string name="af_tip">تلميح</string>
+    <string name="af_undo">إلغاء</string>
+    <string name="af_use">استخدم</string>
+    <string name="af_yes">نعم فعلا</string>
+
+    <string name="af_cant_get_rec_lang_list">لا يمكن الحصول على اللغات المتوفرة</string>
+    <string name="af_network_error">خطأ في الشبكة. تحقق من اتصالك بالإنترنت</string>
+    <string name="af_new_app_already_available">تطبيقنا الجديد <xliff:g id="app_name">%s</xliff:g> متوفر بالفعل على جوجل بلاي!</string>
+    <string name="af_restore_defaults">استعادة الضبط الافتراضي</string>
+    <string name="af_use_std_recognition_app">استخدم تطبيق عادي للتعرف على الصوت</string>
+    <string name="af_want_more_features">هل تريد المزيد من الميزات؟</string>
+</resources>
