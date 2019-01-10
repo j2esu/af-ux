@@ -45,7 +45,7 @@
     <string name="af_open">Открыть</string>
     <string name="af_other">Другое</string>
     <string name="af_primary_color">Основной цвет</string>
-    <string name="af_privacy_policy">Конфиденциальность</string>
+    <string name="af_privacy_policy">Политика конфиденциальности</string>
     <string name="af_rate">Оценить</string>
     <string name="af_rate_prompt">Понравилось приложение?<xliff:g>\n</xliff:g>Оцените нас на Google Play!</string>
     <string name="af_recent_items_title">Недавние</string>
