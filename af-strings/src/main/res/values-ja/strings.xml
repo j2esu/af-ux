@@ -109,7 +109,7 @@
     <string name="af_use_std_recognition_app">標準の音声認識アプリを使用する</string>
     <string name="af_want_more_features">より多くの機能を利用しますか？</string>
 
-    <string name="enable">有効にする</string>
-    <string name="help">助けて</string>
-    <string name="theme_system">フォローシステム</string>
+    <string name="af_enable">有効にする</string>
+    <string name="af_help">助けて</string>
+    <string name="af_theme_system">フォローシステム</string>
 </resources>

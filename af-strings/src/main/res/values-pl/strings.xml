@@ -97,7 +97,7 @@
     <!-- content description -->
     <string name="af_cd_open_application_menu">Otwórz menu aplikacji</string>
 
-    <string name="theme_system">Postępuj zgodnie z systemem</string>
-    <string name="enable">Włącz</string>
-    <string name="help">Pomoc</string>
+    <string name="af_theme_system">Postępuj zgodnie z systemem</string>
+    <string name="af_enable">Włącz</string>
+    <string name="af_help">Pomoc</string>
 </resources>

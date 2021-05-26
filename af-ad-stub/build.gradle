@@ -38,4 +38,4 @@ dependencies {
 }
 
 //gradlew :ad-stub:clean :ad-stub:build :ad-stub:generateRelease
-apply from: 'https://raw.githubusercontent.com/j2esu/release-android-library/master/android-release-aar.gradle'
+//apply from: 'https://raw.githubusercontent.com/j2esu/release-android-library/master/android-release-aar.gradle'

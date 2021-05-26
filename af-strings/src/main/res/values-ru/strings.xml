@@ -100,7 +100,7 @@
     <!-- content description -->
     <string name="af_cd_open_application_menu">Открыть меню приложения</string>
 
-    <string name="theme_system">Как в системе</string>
-    <string name="enable">Включить</string>
-    <string name="help">Помощь</string>
+    <string name="af_theme_system">Как в системе</string>
+    <string name="af_enable">Включить</string>
+    <string name="af_help">Помощь</string>
 </resources>

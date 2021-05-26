@@ -114,7 +114,7 @@
     <string name="af_use_std_recognition_app">استخدم تطبيق عادي للتعرف على الصوت</string>
     <string name="af_want_more_features">هل تريد المزيد من الميزات؟</string>
 
-    <string name="theme_system">نظام المتابعة</string>
-    <string name="enable">تمكين</string>
-    <string name="help">مساعدة</string>
+    <string name="af_theme_system">نظام المتابعة</string>
+    <string name="af_enable">تمكين</string>
+    <string name="af_help">مساعدة</string>
 </resources>

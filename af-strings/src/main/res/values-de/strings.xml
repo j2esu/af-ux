@@ -110,7 +110,7 @@
     <string name="af_use_std_recognition_app">Verwenden Sie die Standard-Spracherkennungs-App</string>
     <string name="af_want_more_features">Möchten Sie weitere Funktionen?</string>
 
-    <string name="theme_system">Dem System folgen</string>
-    <string name="enable">Aktivieren</string>
-    <string name="help">Hilfe</string>
+    <string name="af_theme_system">Dem System folgen</string>
+    <string name="af_enable">Aktivieren</string>
+    <string name="af_help">Hilfe</string>
 </resources>

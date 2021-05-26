@@ -39,4 +39,4 @@ dependencies {
 }
 
 //gradlew :main:clean :main:build :main:generateRelease
-apply from: 'https://raw.githubusercontent.com/j2esu/release-android-library/master/android-release-aar.gradle'
+//apply from: 'https://raw.githubusercontent.com/j2esu/release-android-library/master/android-release-aar.gradle'

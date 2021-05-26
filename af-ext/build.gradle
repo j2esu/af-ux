@@ -40,4 +40,4 @@ dependencies {
 }
 
 //gradlew :af-ext:clean :af-ext:build :af-ext:generateRelease
-apply from: 'https://raw.githubusercontent.com/j2esu/release-android-library/master/android-release-aar.gradle'
+//apply from: 'https://raw.githubusercontent.com/j2esu/release-android-library/master/android-release-aar.gradle'

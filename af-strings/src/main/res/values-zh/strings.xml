@@ -109,7 +109,7 @@
     <string name="af_use_std_recognition_app">使用标准语音识别应用</string>
     <string name="af_want_more_features">想要更多功能？</string>
 
-    <string name="theme_system">追踪系统</string>
-    <string name="enable">启用</string>
-    <string name="help">帮助</string>
+    <string name="af_theme_system">追踪系统</string>
+    <string name="af_enable">启用</string>
+    <string name="af_help">帮助</string>
 </resources>

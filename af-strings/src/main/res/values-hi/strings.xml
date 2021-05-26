@@ -110,7 +110,7 @@
     <string name="af_use_std_recognition_app">मानक आवाज़ पहचान ऐप इस्तेमाल करें</string>
     <string name="af_want_more_features">और अधिक सुविधाएं चाहते हैं?</string>
 
-    <string name="theme_system">सिस्टम को फ़ॉलो करें</string>
-    <string name="enable">चालू करें</string>
-    <string name="help">मदद</string>
+    <string name="af_theme_system">सिस्टम को फ़ॉलो करें</string>
+    <string name="af_enable">चालू करें</string>
+    <string name="af_help">मदद</string>
 </resources>

@@ -1,7 +1,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- no translate -->
     <string name="ux_apps_support_email" translatable="false">support@uxapps.ru</string>
-    <string name="af_empty_string" translatable="false"/>
+    <string name="af_empty_string" translatable="false" />
 
     <!-- common (from sources) -->
     <string name="af_no_apps_found">Could not find an appropriate application</string>
@@ -111,7 +111,7 @@
     <string name="af_want_more_features">Want more features?</string>
     <string name="af_new_app_already_available">Our new app <xliff:g id="app_name">%s</xliff:g> is already available on Google Play!</string>
 
-    <string name="enable">Enable</string>
-    <string name="help">Help</string>
-    <string name="theme_system">Follow system</string>
+    <string name="af_enable">Enable</string>
+    <string name="af_help">Help</string>
+    <string name="af_theme_system">Follow system</string>
 </resources>

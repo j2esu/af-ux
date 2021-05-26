@@ -110,7 +110,7 @@
     <string name="af_use_std_recognition_app">Utilizza l\'applicazione standard di riconoscimento vocale</string>
     <string name="af_want_more_features">Vuoi altre funzioni?</string>
 
-    <string name="theme_system">Segui il sistema</string>
-    <string name="enable">Abilita</string>
-    <string name="help">Aiuto</string>
+    <string name="af_theme_system">Segui il sistema</string>
+    <string name="af_enable">Abilita</string>
+    <string name="af_help">Aiuto</string>
 </resources>
