@@ -110,4 +110,8 @@
     <string name="af_restore_defaults">Restore defaults</string>
     <string name="af_want_more_features">Want more features?</string>
     <string name="af_new_app_already_available">Our new app <xliff:g id="app_name">%s</xliff:g> is already available on Google Play!</string>
+
+    <string name="enable">Enable</string>
+    <string name="help">Help</string>
+    <string name="theme_system">Follow system</string>
 </resources>

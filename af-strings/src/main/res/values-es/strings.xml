@@ -109,4 +109,8 @@
     <string name="af_restore_defaults">Restaurar valores predeterminados</string>
     <string name="af_use_std_recognition_app">Usar aplicación de reconocimiento de voz estándar</string>
     <string name="af_want_more_features">¿Quieres más funciones?</string>
+
+    <string name="theme_system">Seguir el sistema</string>
+    <string name="enable">Habilitar</string>
+    <string name="help">Ayuda</string>
 </resources>

@@ -105,4 +105,8 @@
 
     <!-- content description -->
     <string name="af_cd_open_application_menu">앱 메뉴 열기</string>
+
+    <string name="theme_system">시스템 팔로우</string>
+    <string name="enable">활성화</string>
+    <string name="help">도움</string>
 </resources>

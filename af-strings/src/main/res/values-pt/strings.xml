@@ -97,4 +97,8 @@
 
     <!-- content description -->
     <string name="af_cd_open_application_menu">Abrir menu do app</string>
+
+    <string name="theme_system">Seguir sistema</string>
+    <string name="enable">Habilitar</string>
+    <string name="help">Ajuda</string>
 </resources>

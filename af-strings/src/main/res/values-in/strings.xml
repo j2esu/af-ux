@@ -108,4 +108,9 @@
     <string name="af_restore_defaults">Pulihkan default</string>
     <string name="af_use_std_recognition_app">Gunakan aplikasi pengenalan suara standar</string>
     <string name="af_want_more_features">Ingin fitur lain?</string>
+
+    <string name="theme_system">Ikuti sistem</string>
+    <string name="enable">Aktifkan</string>
+
+    <string name="help">Bantuan</string>
 </resources>
