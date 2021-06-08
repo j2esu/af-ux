@@ -75,7 +75,7 @@
     <string name="af_theme_dark">Ciemny</string>
     <string name="af_theme_light">Jasny</string>
     <string name="af_tip">Wskazówka</string>
-    <string name="af_undo">Cofnąć</string>
+    <string name="af_undo">Cofnij</string>
     <string name="af_use">Użyć</string>
     <string name="af_use_std_recognition_app">Użyj standardowej aplikacji do rozpoznawania głosu</string>
     <string name="af_vibrate_title">"Wibracje"</string>
